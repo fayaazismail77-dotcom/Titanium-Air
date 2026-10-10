@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Titanium Air | Private Charter Flights, South Africa</title>
+<meta name="description" content="Titanium Air arranges private charter flights across South Africa and beyond: business, leisure, group and safari flights from Lanseria.">
+<meta name="theme-color" content="#07090d">
+<meta name="robots" content="noindex,nofollow"><!-- prototype only: remove this tag when the client approves and the site goes live -->
+<link rel="icon" href="https://titaniumair.co.za/wp-content/uploads/2021/04/cropped-Titanium-Air-private-charter-flights-lanseria.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!--
+  HANDOVER NOTES (delete before launch)
+  1. Fill the CLIENT object in the script at the bottom (AOC number, company reg, VAT). Empty values are hidden automatically.
+  2. Add licensed photography via the PHOTOS object (hero, lounge, safari, about). Empty = original artwork is shown.
+  3. The enquiry form opens the visitor's email app (mailto). Connect it to a form service or backend before launch if you want it to send directly.
+  4. Legal pages (Privacy / Terms) are TEMPLATES. Have an attorney review them.
+  5. Remove the "Design concept" ribbon (id="concept") once the client has signed off.
+  6. Remove the noindex meta tag above only when the client approves and the site goes live.
+  7. Do not publish before the client has confirmed every claim on the sign-off checklist (titanium-air-signoff-checklist.md).
+-->
+
+<style>
+:root{
+  --ink:#06080c; --ink2:#0b0f16; --panel:#10151e; --panel2:#151c28;
+  --line:rgba(255,255,255,.09); --line2:rgba(255,255,255,.16);
+  --text:#e9edf3; --muted:#93a0b2; --silver:#c9d2de;
+  --gold:#dcae78; --gold2:#f0cf9f; --ice:#9fc4ff;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--ink);color:var(--text);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img,svg{display:block;max-width:100%}
+::selection{background:var(--gold);color:#111}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,92vw);margin-inline:auto}
+.eyebrow{font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:600;display:inline-flex;align-items:center;gap:.9rem}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(2.3rem,5vw,4.2rem);margin:1rem 0 1.4rem}
+h2 em,h1 em{font-style:italic;color:var(--gold2)}
+.lead{color:var(--muted);font-size:1.08rem;max-width:58ch}
+section{position:relative;padding:clamp(5rem,11vw,9rem) 0}
+.ti{background:linear-gradient(110deg,#fff 0%,#aab6c6 35%,#f3f6fa 55%,#8793a6 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* progress + cursor glow */
+#prog{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--ice));z-index:200}
+#glow{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:1;left:0;top:0;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(220,174,120,.09),transparent 62%);opacity:0;transition:opacity .4s}
+
+.logo img.lg{height:54px;width:auto;max-width:none;filter:drop-shadow(0 4px 14px rgba(0,0,0,.5))}
+footer .logo img.lg{height:84px}
+.in-mark img{height:clamp(110px,18vh,160px);width:auto;margin:0 auto 2rem;opacity:0;animation:fadeup 1.2s var(--ease) .15s forwards;filter:drop-shadow(0 10px 40px rgba(159,196,255,.25))}
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:150;transition:transform .5s var(--ease),background .4s,border-color .4s;border-bottom:1px solid transparent}
+nav.solid{background:rgba(6,8,12,.72);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border-color:var(--line)}
+nav.hide{transform:translateY(-100%)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:.8rem}
+.logo svg{width:34px;height:34px}
+.logo b{font-weight:700;letter-spacing:.34em;font-size:.92rem}
+.logo span{font-weight:300;letter-spacing:.34em;font-size:.92rem;color:var(--gold)}
+.links{display:flex;gap:2rem;align-items:center}
+.links a.l{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--silver);position:relative;padding:.4rem 0}
+.links a.l::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.links a.l:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;gap:.8rem;padding:.95rem 1.7rem;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;position:relative;overflow:hidden;transition:transform .3s var(--ease),box-shadow .4s;isolation:isolate}
+.btn.gold{background:linear-gradient(120deg,var(--gold),var(--gold2));color:#15110b;box-shadow:0 10px 40px -12px rgba(220,174,120,.6)}
+.btn.gold:hover{transform:translateY(-2px);box-shadow:0 16px 50px -10px rgba(220,174,120,.8)}
+.btn.ghost{border:1px solid var(--line2);color:var(--text);backdrop-filter:blur(6px)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold2);transform:translateY(-2px)}
+.btn svg{width:16px;height:16px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(5px)}
+.burger{display:none;width:44px;height:44px;position:relative}
+.burger i{position:absolute;left:10px;right:10px;height:1.5px;background:var(--text);transition:.4s var(--ease)}
+.burger i:nth-child(1){top:17px}.burger i:nth-child(2){top:26px}
+.burger.on i:nth-child(1){top:21px;transform:rotate(45deg)}.burger.on i:nth-child(2){top:21px;transform:rotate(-45deg)}
+#mnav{position:fixed;inset:0;background:rgba(6,8,12,.97);z-index:140;display:flex;flex-direction:column;justify-content:center;padding:0 8vw;gap:1.1rem;clip-path:circle(0 at calc(100% - 40px) 38px);transition:clip-path .8s var(--ease)}
+#mnav.on{clip-path:circle(150% at calc(100% - 40px) 38px)}
+#mnav a{font-family:var(--serif);font-size:2.6rem}
+@media(max-width:980px){.links{display:none}.burger{display:block}}
+
+/* hero */
+#hero{min-height:100svh;padding:0;display:flex;align-items:center;overflow:hidden;background:linear-gradient(180deg,#04060a 0%,#0a1220 48%,#1b1a22 74%,#3a2b26 100%)}
+#sky{position:absolute;inset:0;width:100%;height:100%}
+.hero-photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.5s}
+.hero-photo.has-photo{opacity:.45}
+.sun{position:absolute;left:50%;bottom:-18%;width:130vmax;height:60vmax;transform:translateX(-50%);background:radial-gradient(ellipse at 50% 100%,rgba(240,170,110,.5),rgba(220,130,90,.16) 32%,transparent 64%);pointer-events:none}
+.ridges{position:absolute;left:0;right:0;bottom:0;height:46%;pointer-events:none}
+.ridges svg{position:absolute;left:0;bottom:0;width:100%;height:100%}
+.hero-grid{position:relative;z-index:3;display:grid;grid-template-columns:1.25fr .75fr;gap:3rem;align-items:center;padding:130px 0 150px}
+.hero h1,#hero h1{font-size:clamp(3.2rem,8.4vw,7.6rem);margin:1.4rem 0 1.6rem;line-height:.98}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em}
+.w>span{display:inline-block;transform:translateY(110%);animation:up 1.2s var(--ease) forwards;animation-delay:calc(.25s + var(--i)*.09s)}
+@keyframes up{to{transform:none}}
+.fade{opacity:0;transform:translateY(24px);animation:fadeup 1.2s var(--ease) forwards;animation-delay:var(--d,.9s)}
+@keyframes fadeup{to{opacity:1;transform:none}}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.4rem}
+.scrollcue{position:absolute;z-index:4;left:50%;bottom:28px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.7rem;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.scrollcue i{width:1px;height:46px;background:linear-gradient(var(--gold),transparent);animation:drip 2.2s ease-in-out infinite;transform-origin:top}
+@keyframes drip{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* boarding pass */
+.pass-wrap{perspective:1100px}
+.pass{position:relative;border-radius:22px;padding:1.8rem;background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.03));border:1px solid var(--line2);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 40px 90px -30px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.18);transition:transform .25s ease-out;transform-style:preserve-3d}
+.pass::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.12) 50%,transparent 65%);background-size:250% 100%;animation:sheen 6s ease-in-out infinite;pointer-events:none}
+@keyframes sheen{0%,100%{background-position:150% 0}50%{background-position:-50% 0}}
+.pass small{font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);display:block}
+.pass-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.6rem}
+.pass-top b{font-size:.72rem;letter-spacing:.3em;color:var(--gold)}
+.route{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.5rem}
+.route .c{font-family:var(--serif);font-size:3.2rem;line-height:1}
+.route .n{font-size:.78rem;color:var(--muted)}
+.route .mid{flex:1;position:relative;height:30px}
+.route .mid::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px dashed var(--line2)}
+.route .mid svg{position:absolute;top:50%;left:0;width:22px;height:22px;transform:translateY(-50%);animation:glide 3.4s var(--ease) infinite;color:var(--gold2)}
+@keyframes glide{0%{left:0;opacity:0}15%{opacity:1}85%{opacity:1}100%{left:calc(100% - 22px);opacity:0}}
+.pass-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding-top:1.3rem;border-top:1px dashed var(--line2)}
+.pass-row div b{display:block;font-weight:600;font-size:.95rem}
+.swap{transition:opacity .4s,transform .4s}
+.swap.out{opacity:0;transform:translateY(8px)}
+@media(max-width:980px){.hero-grid{grid-template-columns:1fr;padding-bottom:170px}.pass-wrap{max-width:440px}}
+
+/* marquee */
+.marq{border-block:1px solid var(--line);background:var(--ink2);overflow:hidden;padding:1.4rem 0;position:relative;z-index:2}
+.marq-t{display:flex;gap:3.5rem;width:max-content;animation:mq 42s linear infinite}
+.marq:hover .marq-t{animation-play-state:paused}
+.marq-t span{font-family:var(--serif);font-size:1.9rem;font-style:italic;color:var(--silver);display:inline-flex;align-items:center;gap:3.5rem;white-space:nowrap}
+.marq-t span::after{content:"";width:7px;height:7px;border:1px solid var(--gold);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.rv.l{transform:translateX(-50px)}.rv.r{transform:translateX(50px)}
+.rv.l.in,.rv.r.in{transform:none}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.plate{position:relative;aspect-ratio:1/1.08;border-radius:26px;overflow:hidden;background:radial-gradient(circle at 30% 20%,#26303f,#0d121a 60%);border:1px solid var(--line2);display:grid;place-items:center}
+.plate::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(100deg,rgba(255,255,255,.028) 0 2px,transparent 2px 5px);mix-blend-mode:screen}
+.plate[data-photo].has-photo{background-size:cover;background-position:center}
+.plate[data-photo].has-photo>*{display:none}
+.plate canvas{position:absolute;inset:0;width:100%;height:100%}
+.orbit{position:absolute;border:1px solid var(--line2);border-radius:50%;inset:12%}
+.orbit.o2{inset:26%;border-style:dashed;animation:spin 60s linear infinite reverse}
+.orbit.o1{animation:spin 40s linear infinite}
+.orbit i{position:absolute;top:-9px;left:50%;width:18px;height:18px;margin-left:-9px;color:var(--gold2)}
+.orbit i svg{width:100%;height:100%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.plate .mono{position:relative;font-family:var(--serif);font-size:clamp(5rem,13vw,10rem);letter-spacing:-.04em;line-height:1}
+.plate .tag{position:absolute;left:1.5rem;bottom:1.4rem;right:1.5rem;display:flex;justify-content:space-between;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.quote{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.25;color:var(--gold2);border-left:1px solid var(--gold);padding-left:1.4rem;margin:2rem 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:4rem}
+.stat{background:var(--ink);padding:2rem 1.4rem;text-align:center}
+.stat b{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,4vw,3.4rem);display:block;line-height:1}
+.stat span{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+
+/* why */
+#why{background:linear-gradient(180deg,var(--ink),var(--ink2))}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.card{position:relative;background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:20px;padding:2rem 1.7rem;overflow:hidden;transition:transform .6s var(--ease),border-color .4s}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(400px circle at var(--mx,50%) var(--my,0%),rgba(220,174,120,.14),transparent 55%);opacity:0;transition:opacity .4s}
+.card:hover{transform:translateY(-8px);border-color:rgba(220,174,120,.4)}
+.card:hover::before{opacity:1}
+.card .ic{width:50px;height:50px;border-radius:14px;border:1px solid var(--line2);display:grid;place-items:center;color:var(--gold2);margin-bottom:1.6rem;position:relative}
+.card .ic svg{width:24px;height:24px}
+.card h3{font-size:1.7rem;margin-bottom:.7rem}
+.card p{color:var(--muted);font-size:.95rem;position:relative}
+.card .num{position:absolute;right:1.4rem;top:1rem;font-family:var(--serif);font-size:3.6rem;color:rgba(255,255,255,.05)}
+@media(max-width:1000px){.why-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
+
+/* services */
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center;margin-top:5rem}
+.svc.flip .svc-art{order:2}
+.svc-art{position:relative;aspect-ratio:4/3.1;border-radius:26px;overflow:hidden;border:1px solid var(--line2);background:#0c1119}
+.svc-art svg{position:absolute;inset:0;width:100%;height:100%}
+.svc-art[data-photo].has-photo{background-size:cover;background-position:center}
+.svc-art[data-photo].has-photo svg{display:none}
+.svc h3{font-size:clamp(2rem,3.6vw,3rem);margin:.8rem 0 1rem}
+.ticks{list-style:none;margin:1.6rem 0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:.8rem 1.4rem}
+.ticks li{font-size:.92rem;color:var(--silver);padding-left:1.7rem;position:relative}
+.ticks li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:10px;border:1px solid var(--gold);transform:rotate(45deg)}
+.note{font-size:.84rem;color:var(--muted);margin-top:1rem}
+@media(max-width:900px){.svc{grid-template-columns:1fr}.svc.flip .svc-art{order:0}.ticks{grid-template-columns:1fr}}
+.pulse-l{animation:blink 2.4s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+.drift{animation:drift 9s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-14px)}to{transform:translateX(14px)}}
+
+/* fleet */
+#fleet{background:var(--ink2);overflow:hidden}
+.fleet-top{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+.filters{display:flex;gap:.6rem;flex-wrap:wrap}
+.filters button{padding:.6rem 1.2rem;border-radius:999px;border:1px solid var(--line2);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--silver);transition:.35s var(--ease)}
+.filters button:hover{border-color:var(--gold)}
+.filters button.on{background:var(--gold);border-color:var(--gold);color:#14100a;font-weight:700}
+.rail{display:flex;gap:1.4rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:3rem max(4vw,calc((100vw - 1240px)/2)) 2rem;scrollbar-width:none;cursor:grab}
+.rail::-webkit-scrollbar{display:none}
+.rail.drag{cursor:grabbing;scroll-snap-type:none}
+.fc{flex:0 0 min(360px,82vw);scroll-snap-align:start;border-radius:24px;background:linear-gradient(170deg,var(--panel2),var(--panel));border:1px solid var(--line);overflow:hidden;transition:transform .6s var(--ease),border-color .4s,opacity .5s;user-select:none}
+.fc:hover{transform:translateY(-10px);border-color:rgba(220,174,120,.45)}
+.fc.gone{display:none}
+.fc-art{position:relative;height:200px;overflow:hidden;background:linear-gradient(180deg,#0a1220,#1c2433 60%,#3a2c28)}
+.fc-art::before{content:"";position:absolute;left:-10%;right:-10%;bottom:-30%;height:70%;background:radial-gradient(ellipse at 50% 100%,rgba(240,170,110,.45),transparent 65%)}
+.fc-art .stars{position:absolute;inset:0;background-image:radial-gradient(1px 1px at 20% 30%,#fff,transparent),radial-gradient(1px 1px at 70% 20%,#fff,transparent),radial-gradient(1px 1px at 45% 55%,#fff,transparent),radial-gradient(1.4px 1.4px at 85% 60%,#fff,transparent),radial-gradient(1px 1px at 10% 70%,#fff,transparent);opacity:.6}
+.fc-art .plane{position:absolute;left:50%;top:54%;width:78%;transform:translate(-50%,-50%);transition:transform 1.2s var(--ease);filter:drop-shadow(0 18px 18px rgba(0,0,0,.45))}
+.fc:hover .plane{transform:translate(-46%,-56%) rotate(-3deg)}
+.fc-body{padding:1.6rem 1.6rem 1.8rem}
+.tag{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.fc h3{font-size:1.9rem;margin:.4rem 0 1.2rem}
+.fc dl{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:1rem 0;border-block:1px solid var(--line);margin-bottom:1.3rem}
+.fc dt{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.fc dd{font-weight:600}
+.fc a.enq{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);display:inline-flex;gap:.6rem;align-items:center}
+.fc a.enq:hover{gap:1rem}
+.rail-ctl{display:flex;gap:.8rem;align-items:center}
+.rail-ctl button{width:50px;height:50px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;transition:.35s}
+.rail-ctl button:hover{border-color:var(--gold);color:var(--gold2)}
+.rail-ctl svg{width:18px;height:18px}
+.fine{font-size:.8rem;color:var(--muted);max-width:75ch}
+
+/* routes */
+.routes-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:2.5rem;margin-top:3rem;align-items:start}
+.mapbox{position:relative;border-radius:26px;border:1px solid var(--line2);background:radial-gradient(circle at 50% 30%,#101a2a,#080b11 70%);overflow:hidden;padding:1rem}
+.mapbox::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;opacity:.35;mask-image:radial-gradient(circle,#000,transparent 75%);-webkit-mask-image:radial-gradient(circle,#000,transparent 75%)}
+.mapbox svg{position:relative;width:100%;height:auto}
+.land{fill:#131b27;stroke:rgba(255,255,255,.22);stroke-width:1.2}
+.hole{fill:#080b11;stroke:rgba(255,255,255,.18);stroke-width:1;stroke-dasharray:3 4}
+.rt{fill:none;stroke:var(--gold);stroke-width:1.5;opacity:.45;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.2s var(--ease),opacity .4s,stroke-width .3s}
+.mapbox.in .rt{stroke-dashoffset:0}
+.rt.act{opacity:1;stroke-width:2.6;filter:drop-shadow(0 0 6px rgba(240,200,140,.8))}
+.nd{cursor:pointer}
+.nd circle.dot{fill:var(--ink);stroke:var(--gold2);stroke-width:2;transition:.3s}
+.nd:hover circle.dot,.nd.act circle.dot{fill:var(--gold2);r:8}
+.nd text{font-family:var(--sans);font-size:13px;fill:var(--silver);letter-spacing:.04em;pointer-events:none}
+.nd.act text{fill:#fff;font-weight:700}
+.hub circle.ring{fill:none;stroke:var(--ice);stroke-width:1.5;transform-origin:center;transform-box:fill-box;animation:ping 2.8s ease-out infinite}
+.hub circle.ring.b{animation-delay:1.2s}
+@keyframes ping{from{transform:scale(.6);opacity:1}to{transform:scale(3.4);opacity:0}}
+.dlist{display:grid;gap:.6rem}
+.dbtn{text-align:left;padding:1rem 1.2rem;border-radius:14px;border:1px solid var(--line);background:var(--panel);transition:.4s var(--ease);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.dbtn:hover,.dbtn.act{border-color:rgba(220,174,120,.5);background:var(--panel2);transform:translateX(6px)}
+.dbtn b{font-family:var(--serif);font-weight:500;font-size:1.35rem}
+.dbtn small{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.dinfo{margin-top:1.2rem;padding:1.4rem;border-radius:16px;border:1px solid var(--line2);background:linear-gradient(160deg,rgba(220,174,120,.1),transparent);min-height:122px}
+.dinfo h4{font-family:var(--serif);font-weight:500;font-size:1.5rem;margin-bottom:.4rem}
+.dinfo p{color:var(--muted);font-size:.93rem}
+@media(max-width:960px){.routes-grid{grid-template-columns:1fr}}
+
+/* experience steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3.5rem;position:relative}
+.steps::before{content:"";position:absolute;top:27px;left:6%;right:6%;border-top:1px dashed var(--line2)}
+.step{position:relative;padding:0 1.2rem;text-align:center}
+.step i{width:54px;height:54px;border-radius:50%;background:var(--ink);border:1px solid var(--gold);display:grid;place-items:center;margin:0 auto 1.3rem;font-family:var(--serif);font-style:normal;font-size:1.5rem;color:var(--gold2);position:relative;z-index:1}
+.step h3{font-size:1.5rem;margin-bottom:.5rem}
+.step p{color:var(--muted);font-size:.92rem}
+@media(max-width:800px){.steps{grid-template-columns:1fr 1fr;gap:2.5rem 0}.steps::before{display:none}}
+
+/* safety tabs */
+#safety{background:var(--ink2)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin:2.4rem 0 2rem}
+.tabs button{padding:.8rem 1.4rem;border-bottom:1px solid var(--line2);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);transition:.3s}
+.tabs button.on{color:var(--gold2);border-color:var(--gold)}
+.panel{display:none;animation:fadeup .8s var(--ease) both}
+.panel.on{display:block}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.pgrid .card h3{font-size:1.45rem}
+.pgrid.two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.pgrid,.pgrid.two{grid-template-columns:1fr}}
+.verify{margin-top:1.8rem;padding:1.2rem 1.4rem;border:1px solid var(--line2);border-radius:14px;color:var(--silver);font-size:.9rem;background:var(--panel)}
+
+/* reviews */
+.rev{position:relative;max-width:900px;margin:3rem auto 0;text-align:center;min-height:300px}
+.rev .q{position:absolute;left:50%;top:0;transform:translateX(-50%);font-family:var(--serif);font-size:9rem;line-height:.7;color:rgba(220,174,120,.18)}
+.rv-slide{position:absolute;inset:0;padding-top:4rem;opacity:0;transform:translateY(14px);transition:.9s var(--ease);pointer-events:none}
+.rv-slide.on{opacity:1;transform:none;pointer-events:auto;position:relative}
+.rv-slide p{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.3;font-style:italic}
+.rv-slide cite{display:block;margin-top:1.8rem;font-style:normal;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.stars-r{color:var(--gold2);letter-spacing:.3em;margin-bottom:1.2rem;font-size:.95rem}
+.dots{display:flex;gap:.6rem;justify-content:center;margin-top:2.4rem}
+.dots button{width:36px;height:2px;background:var(--line2);transition:.4s}
+.dots button.on{background:var(--gold);width:60px}
+.src{margin-top:1.6rem;font-size:.78rem;color:var(--muted)}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,6rem)}
+.faq-list{border-top:1px solid var(--line)}
+.fq{border-bottom:1px solid var(--line)}
+.fq>button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1.4rem;text-align:left;padding:1.5rem 0;font-family:var(--serif);font-size:1.5rem;transition:color .3s}
+.fq>button:hover{color:var(--gold2)}
+.fq .pm{width:28px;height:28px;flex:none;position:relative}
+.fq .pm::before,.fq .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:var(--gold);transform:translate(-50%,-50%);transition:.4s var(--ease)}
+.fq .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.fq.on .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+.fq.on .ans{grid-template-rows:1fr}
+.ans>div{overflow:hidden}
+.ans-in{padding:0 0 1.7rem;color:var(--muted);font-size:.98rem;max-width:68ch}
+.ans-in p+p,.ans-in ul{margin-top:.8rem}
+.ans-in ul{padding-left:1.2rem}
+.ans-in li{margin:.25rem 0}
+.ans-in b{color:var(--text);font-weight:600}
+@media(max-width:900px){.faq-grid{grid-template-columns:1fr}}
+
+/* contact */
+#contact{background:radial-gradient(900px circle at 80% 0,rgba(220,174,120,.1),transparent 60%),var(--ink)}
+.c-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,5rem);margin-top:2rem}
+.cinfo p{margin-bottom:1.6rem}
+.cinfo small{display:block;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem}
+.cinfo a,.cinfo address{font-style:normal;font-family:var(--serif);font-size:1.6rem;line-height:1.25}
+.cinfo a:hover{color:var(--gold2)}
+.cinfo .hrs{font-size:.88rem;color:var(--muted);font-family:var(--sans);display:block;margin-top:.2rem}
+.map{margin-top:2rem;border-radius:18px;overflow:hidden;border:1px solid var(--line2);height:230px;filter:grayscale(1) invert(.9) contrast(.9) brightness(.9)}
+.map iframe{width:100%;height:100%;border:0}
+form{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line2);border-radius:26px;padding:clamp(1.6rem,3vw,2.6rem)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.f{position:relative;display:block}
+.f.full{grid-column:1/-1}
+.f label,.lbl{display:block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:.45rem}
+.f input,.f textarea,.f select{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:.95rem 1rem;color:var(--text);font:inherit;transition:border-color .3s,background .3s;color-scheme:dark}
+.f textarea{min-height:120px;resize:vertical}
+.f input:focus,.f textarea:focus,.f select:focus{outline:0;border-color:var(--gold);background:rgba(255,255,255,.07)}
+.seg{display:flex;gap:.6rem}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{margin:0;flex:1;text-align:center;padding:.9rem;border:1px solid var(--line);border-radius:12px;cursor:pointer;font-size:.74rem;letter-spacing:.18em;transition:.3s;color:var(--silver)}
+.seg input:checked+label{background:var(--gold);color:#14100a;border-color:var(--gold);font-weight:700}
+.consent{display:flex;gap:.8rem;align-items:flex-start;font-size:.82rem;color:var(--muted);margin:1.2rem 0}
+.consent input{margin-top:.25rem;accent-color:var(--gold)}
+.consent a{color:var(--gold2);text-decoration:underline}
+#fmsg{margin-top:1rem;font-size:.9rem;color:var(--gold2);min-height:1.4em}
+@media(max-width:900px){.c-grid{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:4rem 0 6rem;background:var(--ink2);font-size:.88rem;color:var(--muted)}
+.f-top{display:flex;justify-content:space-between;gap:3rem;flex-wrap:wrap;margin-bottom:3rem}
+.f-top h4{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:600}
+.f-top a,.f-top button{display:block;margin:.4rem 0;color:var(--silver);text-align:left}
+.f-top a:hover,.f-top button:hover{color:var(--gold2)}
+.legal{border-top:1px solid var(--line);padding-top:1.8rem;font-size:.78rem;line-height:1.7;max-width:110ch}
+.legal p+p{margin-top:.7rem}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:1.5rem}
+.modal.on{display:flex}
+.mb{background:var(--panel);border:1px solid var(--line2);border-radius:22px;max-width:760px;width:100%;max-height:86vh;overflow:auto;padding:2.4rem;position:relative}
+.mb h3{font-size:2.2rem;margin-bottom:1rem}
+.mb h5{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:1.4rem 0 .4rem}
+.mb p,.mb li{color:var(--muted);font-size:.93rem}
+.mb ul{padding-left:1.2rem}
+.mb .draft{border:1px solid var(--gold);color:var(--gold2);padding:.8rem 1rem;border-radius:10px;font-size:.84rem;margin-bottom:1rem}
+.x{position:absolute;right:1rem;top:1rem;width:40px;height:40px;border-radius:50%;border:1px solid var(--line2);font-size:1.2rem}
+
+/* concept ribbon */
+#concept{position:fixed;left:16px;bottom:16px;z-index:250;display:flex;align-items:center;gap:.8rem;padding:.55rem .6rem .55rem 1rem;border-radius:999px;background:rgba(16,21,30,.9);border:1px solid var(--line2);backdrop-filter:blur(10px);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--silver)}
+#concept button{width:26px;height:26px;border-radius:50%;border:1px solid var(--line2)}
+
+
+/* ===== intro: pre-flight sequence + window iris ===== */
+body:not(.go) .w>span,body:not(.go) .fade{animation-play-state:paused}
+#intro{position:fixed;inset:0;z-index:500;--r:0px;background:radial-gradient(ellipse at 50% 64%,#241d20 0,#080a0f 52%,#030406 100%);
+ -webkit-mask-image:radial-gradient(ellipse calc(var(--r)*.8) var(--r) at 50% 50%,transparent 99%,#000 100%);
+ mask-image:radial-gradient(ellipse calc(var(--r)*.8) var(--r) at 50% 50%,transparent 99%,#000 100%);overflow:hidden;display:grid;place-items:center}
+#intro .rw{position:absolute;inset:0;width:100%;height:100%}
+.lt{fill:#ffe2b8;opacity:.08;animation:lt 1.5s linear infinite;animation-delay:calc(var(--k)*.085s)}
+#intro.fast .lt{animation-duration:.45s}
+@keyframes lt{0%{opacity:.08}10%{opacity:1}34%{opacity:.08}100%{opacity:.08}}
+.in-c{position:relative;z-index:2;text-align:center;width:min(440px,84vw);margin-top:-14vh;will-change:transform,opacity}
+.in-mark svg{width:64px;height:64px;margin:0 auto 1.1rem;overflow:visible}
+.in-mark path.dr{stroke-dasharray:200;stroke-dashoffset:200;animation:dr 1.8s var(--ease) .1s forwards}
+.in-mark circle{stroke-dasharray:190;stroke-dashoffset:190;animation:dr 1.6s var(--ease) forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.in-name{font-size:.9rem;letter-spacing:.5em;font-weight:700;margin-bottom:2.2rem;opacity:0;animation:fadeup 1s var(--ease) .5s forwards}
+.in-name span{font-weight:300;color:var(--gold);margin-left:.4em}
+.in-count{font-family:var(--serif);font-size:clamp(4.4rem,13vw,7.5rem);line-height:.9;letter-spacing:-.02em}
+.in-count small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin-top:.7rem}
+.in-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1rem;margin:1.8rem 0 1.4rem;text-align:left}
+.in-list li{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);display:flex;gap:.6rem;align-items:center;transition:color .5s}
+.in-list li::before{content:"";width:9px;height:9px;border:1px solid currentColor;transform:rotate(45deg);transition:.5s}
+.in-list li.on{color:var(--gold2)}
+.in-list li.on::before{background:var(--gold2);box-shadow:0 0 12px var(--gold)}
+.in-bar{height:1px;background:var(--line2);overflow:hidden}
+.in-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),#fff);transform:scaleX(0);transform-origin:left}
+#inSkip{position:absolute;right:24px;bottom:24px;z-index:3;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);padding:.7rem 1rem;border:1px solid var(--line2);border-radius:999px}
+#inSkip:hover{color:var(--gold2);border-color:var(--gold)}
+#inRing{position:fixed;left:50%;top:50%;width:0;height:0;transform:translate(-50%,-50%);border-radius:50%;z-index:501;pointer-events:none;
+ box-shadow:0 0 0 3px rgba(225,232,242,.55),0 0 0 9px rgba(20,24,32,.9),0 0 0 11px rgba(255,255,255,.18),inset 0 0 60px rgba(0,0,0,.65),0 0 120px rgba(220,174,120,.4)}
+/* altitude readout */
+#alt{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:60;display:flex;flex-direction:column;align-items:center;gap:.5rem;font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);mix-blend-mode:difference;pointer-events:none}
+#alt b{font-family:var(--serif);font-size:1.3rem;letter-spacing:.02em;color:#fff;font-weight:500}
+#alt i{display:block;width:1px;height:90px;background:var(--line2);position:relative}
+#alt i::after{content:"";position:absolute;left:-3px;bottom:0;width:7px;height:7px;background:var(--gold2);transform:rotate(45deg) translateY(var(--ap,0px))}
+@media(max-width:900px){#alt{display:none}}
+
+@media(prefers-reduced-motion:reduce){
+  #intro,#inRing{display:none!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .w>span,.fade,.rv{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<div id="glow"></div>
+<div id="intro" aria-hidden="true">
+  <svg class="rw" id="rw" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMax slice"></svg>
+  <div class="in-c" id="inC">
+    <div class="in-mark"><img class="lg" src="logo.png" onerror="this.onerror=null;this.src='https://titaniumair.co.za/wp-content/uploads/2021/04/cropped-Titanium-Air-private-charter-flights-lanseria.png'" alt="Titanium Air logo"></div>
+    
+    <div class="in-count"><span id="inN">000</span><small>Pre-flight</small></div>
+    <ul class="in-list"><li>Clearance</li><li>Lounge ready</li><li>Aircraft prepared</li><li>Cleared for takeoff</li></ul>
+    <div class="in-bar"><i id="inBar"></i></div>
+  </div>
+  <button id="inSkip">Skip</button>
+</div>
+<div id="inRing"></div>
+<div id="alt" aria-hidden="true"><span>Alt</span><i></i><b id="altN">0</b><span>ft</span></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#hero" class="logo" aria-label="Titanium Air home">
+      <img class="lg" src="logo.png" onerror="this.onerror=null;this.src='https://titaniumair.co.za/wp-content/uploads/2021/04/cropped-Titanium-Air-private-charter-flights-lanseria.png'" alt="Titanium Air logo">
+    </a>
+    <div class="links">
+      <a class="l" href="#about">About</a>
+      <a class="l" href="#services">Services</a>
+      <a class="l" href="#fleet">Aircraft</a>
+      <a class="l" href="#routes">Destinations</a>
+      <a class="l" href="#safety">Safety</a>
+      <a class="l" href="#faq">FAQ</a>
+      <a class="btn gold" href="#contact">Enquire</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</nav>
+<div id="mnav">
+  <a href="#about">About</a><a href="#services">Services</a><a href="#fleet">Aircraft</a><a href="#routes">Destinations</a><a href="#safety">Safety</a><a href="#faq">FAQ</a><a href="#contact">Enquire</a>
+</div>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="hero-photo" data-photo="hero"></div>
+  <canvas id="sky"></canvas>
+  <div class="sun"></div>
+  <div class="ridges" aria-hidden="true">
+    <svg viewBox="0 0 1600 400" preserveAspectRatio="none" id="rg1" data-speed=".18"></svg>
+    <svg viewBox="0 0 1600 400" preserveAspectRatio="none" id="rg2" data-speed=".1"></svg>
+    <svg viewBox="0 0 1600 400" preserveAspectRatio="none" id="rg3" data-speed=".04"></svg>
+  </div>
+  <div class="wrap hero-grid">
+    <div id="heroText">
+      <span class="eyebrow fade" style="--d:.1s">Private charter &middot; Lanseria, South Africa</span>
+      <h1>
+        <span class="w" style="--i:0"><span>Fly</span></span>
+        <span class="w" style="--i:1"><span>when</span></span>
+        <span class="w" style="--i:2"><span>you</span></span>
+        <span class="w" style="--i:3"><span>want.</span></span><br>
+        <span class="w" style="--i:4"><em><span>Land</span></em></span>
+        <span class="w" style="--i:5"><em><span>where</span></em></span>
+        <span class="w" style="--i:6"><em><span>you</span></em></span>
+        <span class="w" style="--i:7"><em><span>need.</span></em></span>
+      </h1>
+      <p class="lead fade" style="--d:1.3s">Titanium Air arranges private charter flights across South Africa and beyond: business, leisure, group and safari. A VIP lounge at Lanseria (on request), the aircraft that fits the trip, and a team that handles the details.</p>
+      <div class="hero-cta fade" style="--d:1.5s">
+        <a class="btn gold" href="#contact">Plan your flight <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#fleet">View aircraft</a>
+      </div>
+    </div>
+    <div class="pass-wrap fade" style="--d:1.2s">
+      <div class="pass" id="pass">
+        <div class="pass-top"><b>TITANIUM AIR</b><small>Private charter</small></div>
+        <div class="route">
+          <div><div class="c">HLA</div><div class="n">Lanseria</div></div>
+          <div class="mid"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 14l8-3-3-8h2l5 7 7-3c1-.4 2 .7 1.2 1.5L14 15l1 7h-2l-3-5-6 2z"/></svg></div>
+          <div style="text-align:right"><div class="c swap" id="pc">CPT</div><div class="n swap" id="pn">Cape Town</div></div>
+        </div>
+        <div class="pass-row">
+          <div><small>Passengers</small><b>You decide</b></div>
+          <div><small>Departure</small><b>Your time</b></div>
+          <div><small>Lounge</small><b>On request</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scrollcue"><span>Scroll</span><i></i></div>
+</header>
+
+<div class="marq" aria-hidden="true"><div class="marq-t" id="mq"></div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="plate rv l" data-photo="about">
+        <canvas id="globe" role="img" aria-label="A plane circling the globe above South Africa"></canvas>
+        <div class="tag"><span>Est. 2014</span><span>Lanseria</span></div>
+      </div>
+      <div class="rv r">
+        <span class="eyebrow">About us</span>
+        <h2>Big enough to get the job done, <em>small enough to care.</em></h2>
+        <p class="lead">Titanium Air was founded in 2014 by Colin Gilmour and is based at Lanseria International Airport. The company is built around comfort, ease and personal attention for every guest.</p>
+        <p class="lead" style="margin-top:1rem">From light aircraft for bush flying to jets for business and long-range travel, we match the aircraft to the trip, whether you are travelling alone or with a full group.</p>
+        <div class="quote">Luxury, style, class &mdash; and a flight that starts when you say it does.</div>
+        <a class="btn ghost" href="#safety">Quality &amp; safety</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><b class="ti" data-count="2014" data-plain="1">0</b><span>Founded</span></div>
+      <div class="stat rv" style="--d:.1s"><b class="ti" data-count="14">0</b><span>Aircraft types listed</span></div>
+      <div class="stat rv" style="--d:.2s"><b class="ti">4&ndash;30</b><span>Seats per flight</span></div>
+      <div class="stat rv" style="--d:.3s"><b class="ti">05&ndash;22</b><span>Contact hours (SAST)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap">
+    <span class="eyebrow rv">Why fly private</span>
+    <h2 class="rv">More than a faster way <em>to arrive.</em></h2>
+    <p class="lead rv">Compared with a commercial flight, a charter gives you control over the day.</p>
+    <div class="why-grid">
+      <div class="card rv"><span class="num">01</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Time is yours</h3><p>No long check-in lines and no hunting for parking. Just you, your luggage and your agreed departure time.</p></div>
+      <div class="card rv" style="--d:.1s"><span class="num">02</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 9h11v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9zM16 10h2a2 2 0 0 1 0 5h-2M8 3v3M12 3v3"/></svg></div><h3>VIP lounge</h3><p>Before your flight, relax in our Lanseria lounge with a view of the airfield and a hot or cold drink, on request.</p></div>
+      <div class="card rv" style="--d:.2s"><span class="num">03</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16M14 6l6 6-6 6"/></svg></div><h3>You set the plan</h3><p>Choose the date, time, aircraft and destination, and change the itinerary if your plans change. Subject to operational requirements.</p></div>
+      <div class="card rv" style="--d:.3s"><span class="num">04</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="18" height="10" rx="3"/><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg></div><h3>Space &amp; privacy</h3><p>More room than a crowded cabin, and no sharing the aircraft with strangers. Sit where you like (apart from the cockpit).</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <span class="eyebrow rv">Services</span>
+    <h2 class="rv">Two ways to <em>take off.</em></h2>
+
+    <div class="svc">
+      <div class="svc-art rv l" data-photo="lounge">
+        <svg viewBox="0 0 640 496" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="sk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070b13"/><stop offset=".55" stop-color="#1b2740"/><stop offset="1" stop-color="#6a4a3c"/></linearGradient>
+            <linearGradient id="rw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e131b"/><stop offset="1" stop-color="#1b222d"/></linearGradient>
+          </defs>
+          <rect width="640" height="496" fill="url(#sk1)"/>
+          <ellipse cx="320" cy="300" rx="380" ry="90" fill="rgba(240,170,110,.28)"/>
+          <rect y="300" width="640" height="196" fill="url(#rw)"/>
+          <path d="M290 300 L350 300 L560 496 L80 496Z" fill="#161c26"/>
+          <path d="M320 300 L320 496" stroke="#dcae78" stroke-width="3" stroke-dasharray="14 18" opacity=".7"/>
+          <g class="pulse-l" fill="#9fc4ff"><circle cx="292" cy="304" r="2.5"/><circle cx="280" cy="326" r="3"/><circle cx="262" cy="360" r="3.6"/><circle cx="236" cy="410" r="4.4"/><circle cx="200" cy="480" r="5"/></g>
+          <g class="pulse-l" fill="#9fc4ff" style="animation-delay:1.2s"><circle cx="348" cy="304" r="2.5"/><circle cx="360" cy="326" r="3"/><circle cx="378" cy="360" r="3.6"/><circle cx="404" cy="410" r="4.4"/><circle cx="440" cy="480" r="5"/></g>
+          <g class="drift" transform="translate(120 270) scale(.55)">
+            <path d="M10 40 C10 28 40 22 90 20 L230 20 C270 22 296 32 308 42 C296 52 270 60 230 62 L90 62 C40 60 10 54 10 40Z" fill="#cdd5e0"/>
+            <path d="M44 34 L26 -14 L58 -14 L98 30Z" fill="#aab4c3"/>
+            <path d="M232 28 L262 34 L240 38Z" fill="#1a2433"/>
+          </g>
+          <rect x="0" y="0" width="640" height="496" fill="none"/>
+        </svg>
+      </div>
+      <div class="rv r">
+        <span class="eyebrow">Private charter</span>
+        <h3>Charter flights, <em class="ti">your itinerary.</em></h3>
+        <p class="lead">Every guest is treated as a VIP. At our Lanseria base, you can wait in the lounge with a view of the airfield and a selection of coffee (cappuccino, espresso), hot chocolate, cool drinks and light snacks such as cookies, muffins and rusks. Your flight departs at the time we arrange with you.</p>
+        <ul class="ticks">
+          <li>Business flights</li><li>Leisure &amp; scenic flights</li><li>Group &amp; tour charters</li><li>National flights</li><li>International flights</li><li>Specialised charters</li>
+        </ul>
+        <p class="note">We arrange your desired airport, landing strip and arrival destination around your schedule. Lounge access is on request.</p>
+        <a class="btn gold" href="#contact" style="margin-top:1.4rem">Charter enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="svc flip">
+      <div class="svc-art rv r" data-photo="safari">
+        <svg viewBox="0 0 640 496" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="sk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1a2e"/><stop offset=".45" stop-color="#8a4a3a"/><stop offset=".75" stop-color="#e29a5d"/><stop offset="1" stop-color="#f3c88a"/></linearGradient>
+          </defs>
+          <rect width="640" height="496" fill="url(#sk2)"/>
+          <circle cx="440" cy="330" r="64" fill="#ffe3b0" opacity=".9"/>
+          <circle cx="440" cy="330" r="110" fill="#ffd08a" opacity=".16"/>
+          <path d="M0 380 C120 360 200 372 320 366 C440 360 520 372 640 362 L640 496 L0 496Z" fill="#2a1d1c"/>
+          <path d="M0 420 C140 404 260 420 400 410 C500 404 580 414 640 408 L640 496 L0 496Z" fill="#150f10"/>
+          <g fill="#150f10">
+            <path d="M150 420 L152 340 Q150 332 138 322 M152 346 Q164 332 176 324 M151 360 Q140 350 130 346" stroke="#150f10" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="128" cy="318" rx="62" ry="14"/><ellipse cx="184" cy="322" rx="48" ry="11"/><ellipse cx="150" cy="306" rx="52" ry="11"/>
+          </g>
+          <g class="drift" transform="translate(300 120) scale(.42)" style="animation-duration:11s">
+            <path d="M10 40 C10 28 40 22 90 20 L230 20 C270 22 296 32 308 42 C296 52 270 60 230 62 L90 62 C40 60 10 54 10 40Z" fill="#fff3e0"/>
+            <path d="M44 34 L26 -14 L58 -14 L98 30Z" fill="#f0d9bc"/>
+            <path d="M232 28 L262 34 L240 38Z" fill="#5a3a30"/>
+            <path d="M120 54 L190 96 L212 96 L176 54Z" fill="#e7cfae"/>
+          </g>
+        </svg>
+      </div>
+      <div class="rv l">
+        <span class="eyebrow">Safari flights</span>
+        <h3>Fly into the <em class="ti">South African bush.</em></h3>
+        <p class="lead">Skip the long connections and road transfers. Titanium Air can charter you to many safari lodges and gateways across South Africa, from Kruger to the Waterberg, with the same VIP treatment before and after your flight.</p>
+        <p class="lead" style="margin-top:1rem">We provide the flight. If you also want a guided safari experience, speak to a safari tour operator of your choice.</p>
+        <p class="note">Landings at lodges depend on airstrip suitability, weather and the necessary approvals.</p>
+        <a class="btn ghost" href="#routes" style="margin-top:1.4rem">See destinations</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET -->
+<section id="fleet">
+  <div class="wrap fleet-top">
+    <div>
+      <span class="eyebrow rv">Aircraft</span>
+      <h2 class="rv">Choose the aircraft <em>that fits the trip.</em></h2>
+    </div>
+    <div class="rail-ctl rv">
+      <button id="prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      <button id="next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+  <div class="wrap"><div class="filters rv" id="filters">
+    <button class="on" data-f="all">All</button><button data-f="prop">Prop &amp; light aircraft</button><button data-f="jet">Jets</button><button data-f="large">Large cabin</button>
+  </div></div>
+  <div class="rail" id="rail"></div>
+  <div class="wrap"><p class="fine">Aircraft illustrations are stylised and not to scale. Seat counts are indicative and depend on the configuration of the aircraft assigned to your flight. Range, speed and availability are confirmed when you enquire. Aircraft and manufacturer names are the property of their respective owners.</p></div>
+</section>
+
+<!-- ROUTES -->
+<section id="routes">
+  <div class="wrap">
+    <span class="eyebrow rv">Destinations</span>
+    <h2 class="rv">From Lanseria <em>to almost anywhere.</em></h2>
+    <p class="lead rv">Cape Town, Durban and Limpopo, safari lodges, and international charters. Tap a destination to see the route.</p>
+    <div class="routes-grid">
+      <div class="mapbox rv" id="mapbox"></div>
+      <div class="rv" style="--d:.15s">
+        <div class="dlist" id="dlist"></div>
+        <div class="dinfo" id="dinfo"></div>
+      </div>
+    </div>
+    <p class="fine" style="margin-top:1.4rem">The map is a simplified illustration. Destinations are examples and not a complete list, and not every location is available on every aircraft. Routes are subject to airstrip suitability, weather and approvals.</p>
+
+    <div class="steps">
+      <div class="step rv"><i>1</i><h3>Tell us the trip</h3><p>Dates, passengers, where from and where to. Be as detailed as you like.</p></div>
+      <div class="step rv" style="--d:.1s"><i>2</i><h3>We arrange it</h3><p>Aircraft, airport or airstrip and timing, built around your schedule.</p></div>
+      <div class="step rv" style="--d:.2s"><i>3</i><h3>Relax at Lanseria</h3><p>Arrive to the lounge, enjoy a coffee and watch the aircraft come and go.</p></div>
+      <div class="step rv" style="--d:.3s"><i>4</i><h3>Fly</h3><p>Board when you're ready and arrive close to where you need to be.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section id="safety">
+  <div class="wrap">
+    <span class="eyebrow rv">Quality &amp; safety</span>
+    <h2 class="rv">Safety comes <em>before everything.</em></h2>
+    <div class="tabs rv" id="tabs">
+      <button class="on" data-t="t1">Quality &amp; safety</button>
+      <button data-t="t2">Security personnel</button>
+      <button data-t="t3">Corporate responsibility</button>
+    </div>
+
+    <div class="panel on" id="t1">
+      <div class="pgrid">
+        <div class="card"><h3>Regulated operations</h3><p>Titanium Air operates under the oversight of the South African Civil Aviation Authority (SACAA), within the Civil Aviation Regulations and Civil Aviation Technical Standards, and applicable sections of the Occupational Health and Safety Act 85 of 1993.</p></div>
+        <div class="card"><h3>Safety &amp; quality system</h3><p>An integrated safety and quality management system covers pre-flight preparation, aircraft maintenance, crew training and emergency readiness, with performance monitored and corrective action taken.</p></div>
+        <div class="card"><h3>Questions about safety?</h3><p>Ask us about our safety practices, crew and compliance documentation before you book. We are happy to talk it through with you.</p></div>
+      </div>
+      <div class="verify" id="credLine" hidden></div>
+    </div>
+
+    <div class="panel" id="t2">
+      <div class="pgrid two">
+        <div class="card"><h3>Working with your team</h3><p>If you travel with security personnel, we work closely with them. Speak to us before your flight about any special requirements for an official or delegate.</p></div>
+        <div class="card"><h3>Confidentiality</h3><p>Departure, arrival and destination details are kept confidential as far as possible.</p></div>
+        <div class="card"><h3>Timeframes &amp; clearance</h3><p>Safety comes with responsibility. We plan clearance times for checks before, during and after each flight, and work with your officials in the event of a security concern.</p></div>
+        <div class="card"><h3>Firearms &amp; weapons</h3><p>If your security personnel need to carry firearms, tell us well before the flight so that it can be arranged in line with the applicable regulations. Firearms are otherwise not permitted in luggage.</p></div>
+      </div>
+    </div>
+
+    <div class="panel" id="t3">
+      <div class="pgrid">
+        <div class="card"><h3>Community</h3><p>We aim to support local initiatives and charitable projects in the communities where we operate.</p></div>
+        <div class="card"><h3>Responsible partnerships</h3><p>We aim to work with suppliers and service providers that share our ethical standards.</p></div>
+        <div class="card"><h3>Customer safety &amp; satisfaction</h3><p>Training, safety protocols and a commitment to comfort and care.</p></div>
+        <div class="card"><h3>Ethical conduct</h3><p>We aim for professionalism, fairness and transparency, with respect for diversity and inclusion.</p></div>
+        <div class="card"><h3>Environment</h3><p>Looking for ways to improve fuel efficiency, reduce emissions and conserve resources.</p></div>
+        <div class="card"><h3>Continuous improvement</h3><p>Reviewing our practices regularly and setting new goals as the business grows.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow rv" style="justify-content:center">Guest reviews</span>
+    <h2 class="rv">Words from <em>our guests.</em></h2>
+    <div class="rev rv" id="rev"><div class="q">&ldquo;</div></div>
+    <div class="dots" id="rdots"></div>
+    <p class="src">Reviews originally posted by guests on Google. Shown with first name and initial.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--ink2)">
+  <div class="wrap faq-grid">
+    <div class="rv l" style="position:sticky;top:110px;align-self:start">
+      <span class="eyebrow">FAQ</span>
+      <h2>Before <em>you fly.</em></h2>
+      <p class="lead">Baggage, restricted items, the benefits of chartering and more. Can't find your answer? Call or email us.</p>
+      <a class="btn ghost" href="#contact" style="margin-top:1.6rem">Ask us</a>
+    </div>
+    <div class="faq-list rv r" id="faq-list"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <span class="eyebrow rv">Flight enquiry</span>
+    <h2 class="rv">Ready to fly? <em>Tell us where.</em></h2>
+    <p class="lead rv">Be as descriptive as you can. It helps us give you the most accurate answer. Enquiring from outside South Africa? We also arrange international charters.</p>
+    <div class="c-grid">
+      <div class="cinfo rv l">
+        <p><small>Call us</small><a href="tel:+27832920978" id="tel">+27 (0) 83 292 0978</a><span class="hrs">Available 05:00 &ndash; 22:00 (GMT+2)</span></p>
+        <p><small>Email</small><a href="mailto:info@titaniumair.co.za">info@titaniumair.co.za</a></p>
+        <p><small>Office</small><address>Glen Eagle Estate,<br>46 Golden Sun Crescent,<br>Glen Erasmia, Kempton Park, 1619</address></p>
+        <p><small>Flight base</small><span style="font-family:var(--serif);font-size:1.6rem">Lanseria International Airport</span></p>
+        <div class="map"><iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d326.04371829214824!2d28.262257158232995!3d-26.074370896730773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95153a8e064397%3A0x5e100022e0f1767b!2sTitanium%20Air!5e0!3m2!1sen!2sza!4v1705302746354!5m2!1sen!2sza"></iframe></div>
+      </div>
+      <form id="enq" class="rv r" novalidate>
+        <div class="fgrid">
+          <div class="f"><label for="fn">Name</label><input id="fn" required autocomplete="given-name"></div>
+          <div class="f"><label for="fs">Surname</label><input id="fs" required autocomplete="family-name"></div>
+          <div class="f"><label for="fe">Email</label><input id="fe" type="email" required autocomplete="email"></div>
+          <div class="f"><label for="fp">Phone</label><input id="fp" type="tel" required autocomplete="tel"></div>
+          <div class="f full"><span class="lbl">Type of trip</span>
+            <div class="seg"><input type="radio" name="tt" id="tt1" value="Return" checked><label for="tt1">RETURN</label><input type="radio" name="tt" id="tt2" value="One way"><label for="tt2">ONE WAY</label></div></div>
+          <div class="f"><label for="fd">Departure date</label><input id="fd" type="date"></div>
+          <div class="f"><label for="fr">Return date (if applicable)</label><input id="fr" type="date"></div>
+          <div class="f"><label for="fpx">Number of passengers</label><input id="fpx" type="number" min="1" max="60" value="2"></div>
+          <div class="f"><label for="ff">Departing from</label><input id="ff" value="Lanseria"></div>
+          <div class="f full"><label for="fa">Arrival destination</label><input id="fa" placeholder="e.g. Cape Town, Skukuza, Durban"></div>
+          <div class="f full"><label for="fm">Message</label><textarea id="fm" placeholder="More than one destination, or extra details about your trip?"></textarea></div>
+        </div>
+        <label class="consent"><input type="checkbox" id="fc" required><span>I agree to Titanium Air using these details to respond to my enquiry, as described in the <a href="#" data-modal="privacy">Privacy Notice</a>.</span></label>
+        <button type="submit" class="btn gold">Send enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p id="fmsg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a href="#hero" class="logo" style="margin-bottom:1rem"><img class="lg" src="logo.png" onerror="this.onerror=null;this.src='https://titaniumair.co.za/wp-content/uploads/2021/04/cropped-Titanium-Air-private-charter-flights-lanseria.png'" alt="Titanium Air logo"></a>
+        <p>Private charter flights from Lanseria.</p>
+      </div>
+      <div><h4>Explore</h4><a href="#about">About us</a><a href="#services">Services</a><a href="#fleet">Aircraft</a><a href="#routes">Destinations</a></div>
+      <div><h4>Information</h4><a href="#safety">Quality &amp; safety</a><a href="#faq">FAQ</a><button data-modal="privacy">Privacy notice</button><button data-modal="terms">Terms &amp; disclaimer</button></div>
+      <div><h4>Contact</h4><a href="tel:+27832920978">+27 (0) 83 292 0978</a><a href="mailto:info@titaniumair.co.za">info@titaniumair.co.za</a><span>46 Golden Sun Crescent, Glen Eagle Estate,<br>Glen Erasmia, Kempton Park, 1619</span></div>
+    </div>
+    <div class="legal">
+      <p id="co-line"></p>
+      <p>Aircraft shown are representative. Availability, routing, schedules and aircraft types are subject to operational requirements, weather, airstrip suitability and regulatory approvals, and are confirmed at the time of booking. Descriptions on this website are for general information and do not form a contract; the terms of carriage that apply to your flight will be provided when you book.</p>
+      <p>All aircraft, manufacturer and destination names are used for identification only and are the property of their respective owners. No affiliation with or endorsement by those owners is implied.</p>
+      <p>&copy; <span id="yr"></span> Titanium Air Pty Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="mb" id="mbody"></div></div>
+
+<div id="concept"><span>Design concept &middot; not yet approved by Titanium Air</span><button aria-label="Dismiss">&times;</button></div>
+
+<script>
+/* ============ CLIENT DETAILS (fill in; empty values are hidden) ============ */
+const CLIENT={
+  legalName:'Titanium Air Pty Ltd',
+  regNo:'',          // company registration number
+  vatNo:'',          // VAT number
+  aocNo:'',          // Air Operator Certificate number (verify before publishing safety claims)
+  email:'info@titaniumair.co.za'
+};
+/* ============ PHOTOS (licensed images only) ============ */
+const PHOTOS={hero:'',about:'',lounge:'',safari:''};
+
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const PLANE_ICON='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 14l8-3-3-8h2l5 7 7-3c1-.4 2 .7 1.2 1.5L14 15l1 7h-2l-3-5-6 2z"/></svg>';
+
+
+/* ===== intro sequence ===== */
+let scrollVel=0;
+(function(){
+  const I=$('#intro'),R=$('#inRing');
+  if(!I)return;
+  const finish=()=>{I.remove();R&&R.remove();document.body.classList.add('go');document.documentElement.style.overflow='';document.body.style.overflow=''};
+  if(reduce){finish();return}
+  try{
+    document.documentElement.style.overflow='hidden';document.body.style.overflow='hidden';
+    // runway in perspective
+    const svg=$('#rw');let h='<defs><linearGradient id="rwg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2530"/><stop offset="1" stop-color="#0a0c11"/></linearGradient></defs>';
+    h+='<ellipse cx="500" cy="300" rx="560" ry="70" fill="rgba(240,160,100,.24)"/><rect x="0" y="300" width="1000" height="300" fill="#07090d"/>';
+    h+='<polygon points="470,300 530,300 900,600 100,600" fill="url(#rwg)"/>';
+    const N=18;
+    for(let i=0;i<N;i++){
+      const t=Math.pow(i/(N-1),2.1),y=300+t*296,w=30+370*t,r=1.1+4.6*t;
+      h+='<circle class="lt" style="--k:'+i+'" cx="'+(500-w-2)+'" cy="'+y.toFixed(1)+'" r="'+r.toFixed(2)+'"/>';
+      h+='<circle class="lt" style="--k:'+i+'" cx="'+(500+w+2)+'" cy="'+y.toFixed(1)+'" r="'+r.toFixed(2)+'"/>';
+      if(i%2===0)h+='<rect x="'+(500-(1+5*t)).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(2+10*t).toFixed(1)+'" height="'+(2+22*t).toFixed(1)+'" fill="#dcae78" opacity=".55"/>';
+    }
+    svg.innerHTML=h;
+    const Ne=$('#inN'),bar=$('#inBar'),items=$$('.in-list li'),C=$('#inC');
+    let t0=performance.now(),tOpen=0,opened=false,skip=false;
+    const T1=3200,T2=1500,TS=900;
+    $('#inSkip').onclick=()=>{skip=true};
+    const maxR=Math.hypot(innerWidth,innerHeight)*.78;
+    function loop(now){
+      if(!opened){
+        const p=skip?1:Math.min((now-t0)/T1,1),e=1-Math.pow(1-p,2.2);
+        Ne.textContent=String(Math.round(e*100)).padStart(3,'0');
+        bar.style.transform='scaleX('+e+')';
+        items.forEach((li,k)=>li.classList.toggle('on',e>=(k+1)/4-.04));
+        if(p>=1){opened=true;tOpen=now;I.classList.add('fast')}
+      }else{
+        const dur=skip?TS:T2,q=Math.min((now-tOpen)/dur,1),ease=q<.5?4*q*q*q:1-Math.pow(-2*q+2,3)/2,r=ease*maxR;
+        I.style.setProperty('--r',r+'px');
+        R.style.width=(r*1.6)+'px';R.style.height=(r*2)+'px';
+        C.style.opacity=Math.max(0,1-q*2.4);C.style.transform='scale('+(1+q*.5)+')';
+        if(q>.55&&!document.body.classList.contains('go')){document.body.classList.add('go');document.documentElement.style.overflow='';document.body.style.overflow=''}
+        if(q>=1){finish();return}
+      }
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+    setTimeout(()=>{if(document.getElementById('intro'))finish()},12000);
+  }catch(err){finish()}
+})();
+
+/* photo slots */
+$$('[data-photo]').forEach(el=>{const u=PHOTOS[el.dataset.photo];if(u){el.style.backgroundImage='url("'+u+'")';el.classList.add('has-photo')}});
+
+/* footer / credentials */
+$('#yr').textContent=new Date().getFullYear();
+(function(){
+  const bits=[CLIENT.legalName];
+  if(CLIENT.regNo)bits.push('Reg. no. '+CLIENT.regNo);
+  if(CLIENT.vatNo)bits.push('VAT no. '+CLIENT.vatNo);
+  if(CLIENT.aocNo)bits.push('Air Operator Certificate no. '+CLIENT.aocNo);
+  $('#co-line').textContent=bits.join(' \u00b7 ')+' \u00b7 Registered office: 46 Golden Sun Crescent, Glen Eagle Estate, Glen Erasmia, Kempton Park, 1619.';
+  if(CLIENT.aocNo){const c=$('#credLine');c.hidden=false;c.textContent='Air Operator Certificate no. '+CLIENT.aocNo}
+})();
+
+/* concept ribbon */
+$('#concept button').onclick=()=>$('#concept').remove();
+
+/* marquee */
+(function(){
+  const words=['Business flights','Leisure flights','Safari flights','Group charters','Scenic flights','National flights','International flights','VIP lounge','Cape Town','Kruger','Durban','Lanseria'];
+  const h=words.map(w=>'<span>'+w+'</span>').join('');
+  $('#mq').innerHTML=h+h;
+})();
+
+/* nav, progress, mobile menu */
+const nav=$('#nav'),prog=$('#prog');let lastY=0;
+function onScroll(){
+  const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+  scrollVel=Math.min(Math.abs(y-lastY),60);
+  const ht=$('#heroText');
+  if(ht&&!reduce&&y<innerHeight*1.3){const k=Math.min(y/innerHeight,1);ht.style.transform='translateY('+(k*-70)+'px)';ht.style.opacity=Math.max(0,1-k*1.15)}
+  const an=$('#altN');if(an){const f=Math.round(y/h*410)*100;an.textContent=f.toLocaleString('en-ZA').replace(/\s/g,',');$('#alt i').style.setProperty('--ap',(-(y/h)*83)+'px')}
+  prog.style.width=(y/h*100)+'%';
+  nav.classList.toggle('solid',y>40);
+  nav.classList.toggle('hide',y>lastY&&y>400&&!$('#mnav').classList.contains('on'));
+  lastY=y;
+  if(!reduce){$$('.ridges svg').forEach(s=>{s.style.transform='translateY('+(y*s.dataset.speed)+'px)'});}
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const burger=$('#burger'),mnav=$('#mnav');
+function toggleMenu(f){const on=f===undefined?!mnav.classList.contains('on'):f;mnav.classList.toggle('on',on);burger.classList.toggle('on',on);burger.setAttribute('aria-expanded',on)}
+burger.onclick=()=>toggleMenu();
+$$('#mnav a').forEach(a=>a.onclick=()=>toggleMenu(false));
+
+/* reveal + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  e.target.classList.add('in');
+  const c=e.target.querySelector('[data-count]')||(e.target.dataset.count?e.target:null);
+  if(c&&!c.done){c.done=1;const to=+c.dataset.count,t0=performance.now(),d=1600;
+    (function f(t){const p=Math.min((t-t0)/d,1),v=Math.round(to*(1-Math.pow(1-p,4)));c.textContent=v;if(p<1&&!reduce)requestAnimationFrame(f);else c.textContent=to})(t0)}
+  io.unobserve(e.target);
+}),{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+$$('.rv,.mapbox').forEach(el=>io.observe(el));
+
+/* cursor glow + card spotlight */
+if(matchMedia('(pointer:fine)').matches&&!reduce){
+  const g=$('#glow');
+  addEventListener('mousemove',e=>{g.style.opacity=1;g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'});
+  document.addEventListener('mousemove',e=>{const c=e.target.closest&&e.target.closest('.card');if(c){const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')}});
+}
+
+/* ridges */
+(function(){
+  function ridge(seed,amp,base){let d='M0 400 ';for(let x=0;x<=1600;x+=16){const y=base-amp*(.5*Math.sin(x*.0042+seed)+.3*Math.sin(x*.0113+seed*2.1)+.2*Math.sin(x*.027+seed*3.7));d+='L'+x+' '+y.toFixed(1)+' '}return d+'L1600 400Z'}
+  $('#rg1').innerHTML='<path d="'+ridge(1.2,70,250)+'" fill="#171421" opacity=".85"/>';
+  $('#rg2').innerHTML='<path d="'+ridge(3.4,60,300)+'" fill="#0f0e16" opacity=".95"/>';
+  $('#rg3').innerHTML='<path d="'+ridge(5.9,46,350)+'" fill="#07080d"/>';
+})();
+
+/* hero sky: stars + flying aircraft with contrail */
+(function(){
+  const cv=$('#sky'),cx=cv.getContext('2d');let W,H,clouds=[],stars=[],mx=0,my=0,tx=0,ty=0,trail=[];
+  function size(){const D=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0);
+    clouds=Array.from({length:10},()=>({x:Math.random()*W*1.4-W*.2,y:H*(.3+Math.random()*.42),r:70+Math.random()*140,sp:.12+Math.random()*.34,a:.04+Math.random()*.05}));
+    stars=Array.from({length:Math.round(W*H/4600)},()=>({x:Math.random()*W,y:Math.random()*H*.78,r:Math.random()*1.25+.2,p:Math.random()*6.28,s:Math.random()*.02+.004,z:Math.random()}))}
+  size();addEventListener('resize',size);
+  addEventListener('mousemove',e=>{tx=(e.clientX/innerWidth-.5);ty=(e.clientY/innerHeight-.5)});
+  function plane(x,y,a,t){
+    cx.save();cx.translate(x,y);cx.rotate(a);cx.scale(1.25,1.25);
+    cx.fillStyle='#f2f5fa';
+    cx.beginPath();cx.ellipse(0,0,15,2.6,0,0,6.283);cx.fill();
+    cx.beginPath();cx.moveTo(3,0);cx.lineTo(-7,-12);cx.lineTo(-10,-12);cx.lineTo(-6,0);cx.closePath();cx.fill();
+    cx.beginPath();cx.moveTo(3,0);cx.lineTo(-7,12);cx.lineTo(-10,12);cx.lineTo(-6,0);cx.closePath();cx.fill();
+    cx.beginPath();cx.moveTo(-11,0);cx.lineTo(-17,-6);cx.lineTo(-15,-6);cx.lineTo(-9,0);cx.closePath();cx.fill();
+    cx.beginPath();cx.moveTo(-11,0);cx.lineTo(-17,6);cx.lineTo(-15,6);cx.lineTo(-9,0);cx.closePath();cx.fill();
+    const on=Math.sin(t/260)>0;cx.fillStyle=on?'#ff5a5a':'rgba(255,90,90,.2)';cx.beginPath();cx.arc(-8,-12,1.5,0,6.283);cx.fill();
+    cx.fillStyle=on?'rgba(110,255,170,.25)':'#6dffa8';cx.beginPath();cx.arc(-8,12,1.5,0,6.283);cx.fill();
+    cx.restore();
+  }
+  const pos=p=>({x:-60+p*(W+120),y:H*.5-Math.sin(p*Math.PI)*H*.2-p*H*.06});
+  function frame(t){
+    mx+=(tx-mx)*.04;my+=(ty-my)*.04;
+    cx.clearRect(0,0,W,H);
+    for(const s of stars){const a=.35+.65*Math.abs(Math.sin(t*s.s*.1+s.p));cx.globalAlpha=a;cx.fillStyle='#fff';cx.beginPath();cx.arc(s.x-mx*s.z*26,s.y-my*s.z*16,s.r,0,6.283);cx.fill()}
+    cx.globalAlpha=1;
+    scrollVel*=.93;
+    for(const c of clouds){
+      if(!reduce){c.x-=c.sp*(1+scrollVel*.5);if(c.x<-c.r*3)c.x=W+c.r*2}
+      for(const o of [[-.9,.12,.75],[0,0,1],[.95,.1,.8],[.3,-.18,.7]]){
+        const gx=c.x+o[0]*c.r,gy=c.y+o[1]*c.r,gr=c.r*o[2],g=cx.createRadialGradient(gx,gy,0,gx,gy,gr);
+        g.addColorStop(0,'rgba(255,226,200,'+c.a+')');g.addColorStop(1,'rgba(255,226,200,0)');cx.fillStyle=g;cx.fillRect(gx-gr,gy-gr,gr*2,gr*2);
+      }
+    }
+    if(!reduce){
+      const p=(t%22000)/22000,q=pos(p),q2=pos(Math.min(p+.002,1)),ang=Math.atan2(q2.y-q.y,q2.x-q.x);
+      trail.push({x:q.x-18*Math.cos(ang),y:q.y-18*Math.sin(ang)});if(trail.length>150)trail.shift();
+      if(p<.01)trail=[];
+      for(let i=1;i<trail.length;i++){const a=i/trail.length;cx.strokeStyle='rgba(235,225,210,'+(a*.35)+')';cx.lineWidth=1+a*1.6;cx.beginPath();cx.moveTo(trail[i-1].x,trail[i-1].y);cx.lineTo(trail[i].x,trail[i].y);cx.stroke()}
+      plane(q.x,q.y,ang,t);
+      requestAnimationFrame(frame);
+    }
+  }
+  requestAnimationFrame(frame);
+})();
+
+/* boarding pass: cycle destinations + tilt */
+(function(){
+  const d=[['CPT','Cape Town'],['SZK','Skukuza'],['DUR','Durban'],['HDS','Hoedspruit'],['MQP','Kruger Mpumalanga']];let i=0;
+  const c=$('#pc'),n=$('#pn');
+  if(!reduce)setInterval(()=>{c.classList.add('out');n.classList.add('out');setTimeout(()=>{i=(i+1)%d.length;c.textContent=d[i][0];n.textContent=d[i][1];c.classList.remove('out');n.classList.remove('out')},420)},3600);
+  const p=$('#pass');
+  if(matchMedia('(pointer:fine)').matches&&!reduce){
+    p.parentElement.addEventListener('mousemove',e=>{const r=p.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;p.style.transform='rotateY('+(x*14)+'deg) rotateX('+(-y*14)+'deg)'});
+    p.parentElement.addEventListener('mouseleave',()=>p.style.transform='');
+  }
+})();
+
+
+/* about: globe with orbiting plane */
+(function(){
+  const cv=$('#globe');if(!cv)return;
+  const cx=cv.getContext('2d');let W,H;
+  function size(){const D=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0)}
+  size();addEventListener('resize',size);
+  const pts=[],n=1500;
+  for(let i=0;i<n;i++){const y=1-2*(i+.5)/n,r=Math.sqrt(1-y*y),a=i*2.399963;pts.push([Math.cos(a)*r,y,Math.sin(a)*r])}
+  const TILT=.42,lat=-26*Math.PI/180,lon=28*Math.PI/180;
+  const pin=[Math.cos(lat)*Math.sin(lon),-Math.sin(lat),Math.cos(lat)*Math.cos(lon)];
+  function rot(v,th){let x=v[0]*Math.cos(th)+v[2]*Math.sin(th),z=-v[0]*Math.sin(th)+v[2]*Math.cos(th),y=v[1];
+    const yy=y*Math.cos(.38)-z*Math.sin(.38),zz=y*Math.sin(.38)+z*Math.cos(.38);return [x,yy,zz]}
+  const OT=.42,OR=-.4;
+  function orb(a,Ro,R0){const x=Ro*Math.cos(a),z=Ro*Math.sin(a),y2=-z*Math.sin(OT),z2=z*Math.cos(OT);
+    return {x:x*Math.cos(OR)-y2*Math.sin(OR),y:x*Math.sin(OR)+y2*Math.cos(OR),z:z2}}
+  function glyph(x,y,ang,sc,al){
+    cx.save();cx.translate(x,y);cx.rotate(ang);cx.scale(sc,sc);cx.globalAlpha=al;cx.fillStyle='#f4f7fb';
+    cx.beginPath();cx.ellipse(0,0,15,2.8,0,0,6.283);cx.fill();
+    cx.beginPath();cx.moveTo(3,0);cx.lineTo(-7,-13);cx.lineTo(-10,-13);cx.lineTo(-6,0);cx.fill();
+    cx.beginPath();cx.moveTo(3,0);cx.lineTo(-7,13);cx.lineTo(-10,13);cx.lineTo(-6,0);cx.fill();
+    cx.beginPath();cx.moveTo(-11,0);cx.lineTo(-17,-6);cx.lineTo(-15,-6);cx.lineTo(-9,0);cx.fill();
+    cx.beginPath();cx.moveTo(-11,0);cx.lineTo(-17,6);cx.lineTo(-15,6);cx.lineTo(-9,0);cx.fill();
+    cx.restore();cx.globalAlpha=1}
+  let th=-.2,pa=0,vis=true;
+  new IntersectionObserver(e=>{vis=e[0].isIntersecting;if(vis&&!reduce)requestAnimationFrame(frame)}).observe(cv);
+  function arc(a0,a1,Ro,front,alpha,w){
+    const N=Math.max(2,Math.round(Math.abs(a1-a0)*40));
+    for(let i=0;i<N;i++){const u=a0+(a1-a0)*i/N,v=a0+(a1-a0)*(i+1)/N,P=orb(u,Ro),Q=orb(v,Ro);
+      if((P.z+Q.z>=0)!==front)continue;
+      const k=alpha*(i+1)/N;cx.strokeStyle='rgba(240,205,150,'+k+')';cx.lineWidth=w;cx.beginPath();cx.moveTo(W/2+P.x,H/2+P.y);cx.lineTo(W/2+Q.x,H/2+Q.y);cx.stroke()}}
+  function frame(t){
+    if(!vis&&!reduce)return;
+    const R=Math.min(W,H)*.27,Ro=R*1.62,X=W/2,Y=H/2;
+    cx.clearRect(0,0,W,H);
+    // back: orbit ring + plane behind
+    arc(0,6.2832,Ro,false,.22,1);
+    const pos=orb(pa,Ro),pn=orb(pa+.03,Ro),ang=Math.atan2(pn.y-pos.y,pn.x-pos.x);
+    arc(pa-1.1,pa,Ro,false,.7,2);
+    if(pos.z<0)glyph(X+pos.x,Y+pos.y,ang,.8,.55);
+    // glow + sphere
+    let g=cx.createRadialGradient(X,Y,R*.9,X,Y,R*1.5);g.addColorStop(0,'rgba(120,170,255,.28)');g.addColorStop(1,'rgba(120,170,255,0)');
+    cx.fillStyle=g;cx.beginPath();cx.arc(X,Y,R*1.5,0,6.283);cx.fill();
+    g=cx.createRadialGradient(X-R*.4,Y-R*.45,R*.1,X,Y,R);g.addColorStop(0,'#2b3a52');g.addColorStop(.7,'#101826');g.addColorStop(1,'#070b12');
+    cx.fillStyle=g;cx.beginPath();cx.arc(X,Y,R,0,6.283);cx.fill();
+    cx.strokeStyle='rgba(180,205,255,.35)';cx.lineWidth=1.2;cx.stroke();
+    for(const p of pts){const v=rot(p,th);if(v[2]<=0)continue;
+      cx.fillStyle='rgba(190,215,255,'+(.1+.6*v[2])+')';const r=.6+1.1*v[2];cx.fillRect(X+v[0]*R-r/2,Y+v[1]*R-r/2,r,r)}
+    // Lanseria pin
+    const pv=rot(pin,th);
+    if(pv[2]>0){const px=X+pv[0]*R,py=Y+pv[1]*R,k=(t/900)%1;
+      cx.strokeStyle='rgba(240,200,140,'+(1-k)*pv[2]+')';cx.lineWidth=1.4;cx.beginPath();cx.arc(px,py,4+k*16,0,6.283);cx.stroke();
+      cx.fillStyle='#f0cf9f';cx.shadowColor='#dcae78';cx.shadowBlur=14;cx.beginPath();cx.arc(px,py,3.6,0,6.283);cx.fill();cx.shadowBlur=0;
+      if(pv[2]>.4){cx.fillStyle='rgba(255,255,255,'+Math.min(1,(pv[2]-.4)*2.5)+')';cx.font='600 10px Manrope,sans-serif';cx.textBaseline='middle';cx.fillText('LANSERIA',px+12,py)}}
+    // front: orbit + plane in front
+    arc(0,6.2832,Ro,true,.5,1.2);
+    arc(pa-1.1,pa,Ro,true,.95,2.4);
+    if(pos.z>=0)glyph(X+pos.x,Y+pos.y,ang,1.15,1);
+    if(!reduce){th+=.0042;pa+=.011;requestAnimationFrame(frame)}
+  }
+  if(reduce)frame(0);else requestAnimationFrame(frame);
+})();
+
+
+const FLEET=[
+  {n:'Pilatus PC-12 NG',c:'prop',t:'Turboprop',s:'7',cr:'1',k:'prop'},
+  {n:'King Air 200',c:'prop',t:'Turboprop',s:'8',cr:'2',k:'prop'},
+  {n:'King Air 350',c:'prop',t:'Turboprop',s:'8',cr:'2',k:'prop'},
+  {n:'Cessna 208 EX',c:'prop',t:'Turboprop \u00b7 Safari',s:'10\u201312',cr:'2',k:'prop'},
+  {n:'Cessna 206',c:'prop',t:'Light aircraft \u00b7 Safari',s:'On request',cr:'On request',k:'prop'},
+  {n:'Embraer 120',c:'prop',t:'Group charter',s:'30',cr:'3',k:'prop'},
+  {n:'Citation Mustang',c:'jet',t:'Light jet',s:'4',cr:'2',k:'jet'},
+  {n:'Pilatus PC-24 NG',c:'jet',t:'Light jet',s:'6',cr:'2',k:'jet'},
+  {n:'Learjet 45',c:'jet',t:'Light jet',s:'8',cr:'2',k:'jet'},
+  {n:'Learjet 60',c:'jet',t:'Midsize jet',s:'6',cr:'2',k:'jet'},
+  {n:'Challenger 350',c:'jet',t:'Super-midsize jet',s:'8',cr:'2',k:'jet'},
+  {n:'Falcon 900',c:'large',t:'Large cabin',s:'12',cr:'2',k:'big'},
+  {n:'Gulfstream II',c:'large',t:'Large cabin',s:'8',cr:'2',k:'big'},
+  {n:'Global Express',c:'large',t:'Large cabin \u00b7 Long range',s:'12',cr:'2',k:'big'}
+];
+let gid=0;
+function planeSVG(k){
+  const id='pg'+(gid++);
+  const win=(a,b,step,y)=>{let s='';for(let x=a;x<=b;x+=step)s+='<circle cx="'+x+'" cy="'+y+'" r="2.3" fill="#1a2433"/>';return s};
+  const defs='<defs><linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f8fb"/><stop offset="1" stop-color="#8c98aa"/></linearGradient></defs>';
+  if(k==='prop')return '<svg class="plane" viewBox="0 0 400 140" aria-hidden="true">'+defs+
+    '<path d="M44 74 L26 22 L58 22 L100 72Z" fill="url(#'+id+')"/><path d="M30 76 L6 80 L10 86 L48 80Z" fill="#b3bdcb"/>'+
+    '<path d="M16 86 C16 70 44 62 96 60 L262 60 C316 62 346 74 358 88 C346 100 316 108 262 110 L96 110 C44 108 16 102 16 86Z" fill="url(#'+id+')"/>'+
+    '<path d="M150 98 L200 128 L226 128 L206 98Z" fill="#a9b4c3"/>'+
+    '<rect x="180" y="104" width="38" height="12" rx="6" fill="#7c8899"/>'+
+    '<ellipse cx="366" cy="86" rx="5" ry="40" fill="rgba(255,255,255,.28)"><animate attributeName="ry" values="40;14;40" dur=".35s" repeatCount="indefinite"/></ellipse>'+
+    '<path d="M300 70 L336 78 L306 82Z" fill="#1a2433"/>'+win(120,270,26,86)+'</svg>';
+  const big=k==='big';
+  return '<svg class="plane" viewBox="0 0 400 140" aria-hidden="true">'+defs+
+    '<path d="M54 70 L30 18 L66 18 L110 68Z" fill="url(#'+id+')"/><path d="M22 14 L84 14 L84 20 L22 20Z" fill="#b3bdcb"/>'+
+    '<path d="M12 82 C12 66 40 58 92 56 L292 56 C342 58 380 72 394 84 C380 96 342 104 292 106 L92 106 C40 104 12 98 12 82Z" fill="url(#'+id+')"/>'+
+    '<path d="M168 96 L250 130 L280 130 L238 94Z" fill="#a7b2c1"/>'+
+    '<ellipse cx="70" cy="54" rx="'+(big?30:26)+'" ry="9" fill="#7c8899"/>'+(big?'<ellipse cx="70" cy="108" rx="30" ry="8" fill="#6f7b8c"/>':'')+
+    '<path d="M334 66 L376 76 L342 80Z" fill="#1a2433"/>'+win(big?120:140,big?310:300,big?22:24,84)+'</svg>';
+}
+(function(){
+  const rail=$('#rail');
+  rail.innerHTML=FLEET.map(f=>'<article class="fc" data-c="'+f.c+'"><div class="fc-art"><div class="stars"></div>'+planeSVG(f.k)+'</div><div class="fc-body"><span class="tag">'+f.t+'</span><h3>'+f.n+'</h3><dl><div><dt>Seats</dt><dd>'+f.s+'</dd></div><div><dt>Crew</dt><dd>'+f.cr+'</dd></div></dl><a class="enq" href="#contact" data-plane="'+f.n+'">Enquire about this aircraft <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>').join('');
+  $$('.enq',rail).forEach(a=>a.addEventListener('click',()=>{const m=$('#fm');if(!m.value.includes(a.dataset.plane))m.value=('I am interested in the '+a.dataset.plane+'.\n'+m.value).trim()}));
+  $('#filters').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;$$('#filters button').forEach(x=>x.classList.toggle('on',x===b));const f=b.dataset.f;$$('.fc',rail).forEach(c=>c.classList.toggle('gone',f!=='all'&&c.dataset.c!==f));rail.scrollTo({left:0,behavior:'smooth'})});
+  const step=()=>($('.fc:not(.gone)',rail)?.offsetWidth||360)+22;
+  $('#next').onclick=()=>rail.scrollBy({left:step(),behavior:'smooth'});
+  $('#prev').onclick=()=>rail.scrollBy({left:-step(),behavior:'smooth'});
+  let down=false,sx=0,sl=0,moved=0;
+  rail.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;down=true;moved=0;sx=e.clientX;sl=rail.scrollLeft;rail.classList.add('drag')});
+  addEventListener('pointermove',e=>{if(!down)return;moved=Math.abs(e.clientX-sx);rail.scrollLeft=sl-(e.clientX-sx)});
+  addEventListener('pointerup',()=>{down=false;rail.classList.remove('drag')});
+  rail.addEventListener('click',e=>{if(moved>6){e.preventDefault();e.stopPropagation()}},true);
+})();
+
+/* destinations map */
+(function(){
+  const K=50,px=lon=>(lon-15.5)*K*.9,py=lat=>(-lat-21.8)*K;
+  const outline=[[16.5,-28.6],[17.2,-30.2],[18.0,-31.8],[18.3,-33.0],[18.4,-34.0],[18.5,-34.35],[19.2,-34.7],[20.0,-34.8],[21.0,-34.4],[22.2,-34.1],[23.5,-34.0],[25.6,-33.95],[26.8,-33.7],[27.9,-33.0],[29.0,-32.0],[30.0,-31.0],[30.9,-30.0],[31.6,-29.2],[32.4,-28.4],[32.9,-26.85],[32.0,-26.8],[31.95,-25.45],[31.9,-23.9],[31.4,-22.4],[30.9,-22.3],[29.4,-22.15],[28.0,-22.6],[27.0,-23.6],[26.5,-24.6],[25.3,-25.7],[22.8,-25.6],[20.8,-25.9],[20.0,-24.8],[20.0,-28.4],[18.5,-28.9],[17.0,-28.7]];
+  const les=[[27.0,-29.2],[28.0,-28.6],[29.3,-29.1],[29.4,-30.0],[28.5,-30.6],[27.3,-30.2]];
+  const pts=a=>a.map(p=>px(p[0]).toFixed(1)+','+py(p[1]).toFixed(1)).join(' ');
+  const hub={x:px(27.93),y:py(-25.94)};
+  const D=[
+    {id:'cpt',n:'Cape Town',tag:'Western Cape',lon:18.6,lat:-33.95,dx:14,dy:4,a:'start',d:'Business meetings, wine-country weekends or an international connection: fly direct to Cape Town and surrounds, on your timetable. Long-leg flights to and from Cape Town are available internationally.'},
+    {id:'dur',n:'Durban',tag:'KwaZulu-Natal',lon:31.1,lat:-29.95,dx:-14,dy:4,a:'end',d:'The KwaZulu-Natal coast within easy reach. We also arrange flights to Limpopo and other provinces.'},
+    {id:'szk',n:'Skukuza \u00b7 Kruger',tag:'Kruger National Park',lon:31.59,lat:-24.99,dx:-14,dy:20,a:'end',d:'Land in the heart of Kruger National Park and skip the long road transfer.'},
+    {id:'hds',n:'Hoedspruit',tag:'Lowveld',lon:31.05,lat:-24.35,dx:-14,dy:4,a:'end',d:'A gateway to the lowveld, at the foot of the Klein Drakensberg mountains.'},
+    {id:'paf',n:'Pafuri',tag:'Far north Kruger',lon:31.2,lat:-22.45,dx:-14,dy:4,a:'end',d:'The wild far north of the Kruger region.'},
+    {id:'mad',n:'Madikwe',tag:'North West',lon:26.3,lat:-24.8,dx:-14,dy:-8,a:'end',d:'Madikwe Game Reserve is one of South Africa\u2019s larger and lesser-known game reserves.'},
+    {id:'mar',n:'Marakele \u00b7 Marataba',tag:'Waterberg',lon:27.6,lat:-24.35,dx:-14,dy:-10,a:'end',d:'In the Waterberg mountains, home to Marakele National Park and intimate game-viewing lodges.'}
+  ];
+  let svg='<svg viewBox="0 0 800 690" role="img" aria-label="Simplified map of South Africa showing example charter routes from Lanseria"><polygon class="land" points="'+pts(outline)+'"/><polygon class="hole" points="'+pts(les)+'"/>';
+  D.forEach(d=>{d.x=px(d.lon);d.y=py(d.lat);const mx=(hub.x+d.x)/2,my=(hub.y+d.y)/2,dist=Math.hypot(hub.x-d.x,hub.y-d.y);d.p='M'+hub.x+' '+hub.y+' Q'+mx+' '+(my-dist*.28)+' '+d.x+' '+d.y;svg+='<path class="rt" id="rt-'+d.id+'" d="'+d.p+'" pathLength="1"/>'});
+  D.forEach(d=>{svg+='<g class="nd" data-id="'+d.id+'" tabindex="0" role="button" aria-label="'+d.n+'"><circle class="dot" cx="'+d.x+'" cy="'+d.y+'" r="6"/><text x="'+(d.x+d.dx)+'" y="'+(d.y+d.dy)+'" text-anchor="'+d.a+'">'+d.n+'</text></g>'});
+  svg+='<g class="hub"><circle class="ring" cx="'+hub.x+'" cy="'+hub.y+'" r="10"/><circle class="ring b" cx="'+hub.x+'" cy="'+hub.y+'" r="10"/><circle cx="'+hub.x+'" cy="'+hub.y+'" r="7" fill="#9fc4ff"/><text x="'+(hub.x+14)+'" y="'+(hub.y+22)+'" font-size="13" font-weight="700" fill="#cfe0ff" font-family="Manrope,sans-serif" letter-spacing=".08em">LANSERIA</text></g></svg>';
+  $('#mapbox').innerHTML=svg;
+  $('#dlist').innerHTML=D.map(d=>'<button class="dbtn" data-id="'+d.id+'"><b>'+d.n+'</b><small>'+d.tag+'</small></button>').join('');
+  function act(id){
+    $$('.rt').forEach(r=>r.classList.toggle('act',r.id==='rt-'+id));
+    $$('.nd').forEach(n=>n.classList.toggle('act',n.dataset.id===id));
+    $$('.dbtn').forEach(n=>n.classList.toggle('act',n.dataset.id===id));
+    const d=D.find(x=>x.id===id);$('#dinfo').innerHTML='<h4>'+d.n+'</h4><p>'+d.d+'</p>';
+  }
+  act('cpt');
+  $('#mapbox').addEventListener('click',e=>{const n=e.target.closest('.nd');if(n)act(n.dataset.id)});
+  $('#mapbox').addEventListener('keydown',e=>{const n=e.target.closest('.nd');if(n&&(e.key==='Enter'||e.key===' ')){e.preventDefault();act(n.dataset.id)}});
+  $('#mapbox').addEventListener('mouseover',e=>{const n=e.target.closest('.nd');if(n)act(n.dataset.id)});
+  $('#dlist').addEventListener('click',e=>{const b=e.target.closest('.dbtn');if(b)act(b.dataset.id)});
+  $('#dlist').addEventListener('mouseover',e=>{const b=e.target.closest('.dbtn');if(b)act(b.dataset.id)});
+})();
+
+/* tabs */
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;$$('#tabs button').forEach(x=>x.classList.toggle('on',x===b));$$('#safety .panel').forEach(p=>p.classList.toggle('on',p.id===b.dataset.t))});
+
+/* reviews (verbatim from Google) */
+(function(){
+  const R=[
+    {t:'We were looking for a charter flight after our commercial flight was cancelled and were fortunate enough to find Titanium Air. Colin scheduled our flight, patiently answered several questions from my wife, & took care of every detail \u2026',a:'Jason'},
+    {t:'Had such a wonderful experience with Titanium Air. They are amazingly professional and knowledgable. I was so well taken care of and felt so safe. Thanks to Colin and his whole team!',a:'Embeth D.'},
+    {t:'Excellent and professional service. Will definitely use you again. Siyabonga',a:'Tish M.'},
+    {t:'Excellent service! Would recommend 10/10.',a:'Rory A.'}
+  ];
+  const box=$('#rev'),dots=$('#rdots');let i=0,timer;
+  R.forEach((r,k)=>{const s=document.createElement('div');s.className='rv-slide'+(k?'':' on');s.innerHTML='<p>\u201c'+r.t+'\u201d</p><cite>'+r.a+' \u00b7 Google review</cite>';box.appendChild(s);
+    const d=document.createElement('button');d.setAttribute('aria-label','Review '+(k+1));if(!k)d.className='on';d.onclick=()=>{go(k);reset()};dots.appendChild(d)});
+  function go(n){i=n;$$('.rv-slide',box).forEach((s,k)=>{s.classList.toggle('on',k===n);s.style.position=k===n?'relative':'absolute'});$$('button',dots).forEach((d,k)=>d.classList.toggle('on',k===n))}
+  function reset(){clearInterval(timer);if(!reduce)timer=setInterval(()=>go((i+1)%R.length),8000)}
+  reset();
+})();
+
+/* FAQ */
+(function(){
+  const Q=[
+   ['What are the baggage rules?','<p>Allowances depend on the aircraft and flight. As a guide, on our shuttle and safari services each passenger may bring <b>one checked bag and one small carry-on</b>.</p><ul><li>Soft-sided duffel-style bags with one flat side are preferred.</li><li>Checked bag (including camera or filming gear): up to <b>20 kg / 44 lb</b>, no larger than 40 cm wide \u00d7 30 cm high \u00d7 60 cm long.</li><li>Carry-on: up to <b>5 kg / 11 lb</b>.</li><li>Oversized items cannot be carried on your lap.</li></ul><p>Anything over 20 kg must be pre-booked and may carry a surcharge or need a freight seat; it can\u2019t be guaranteed if not arranged beforehand. Luggage storage may be available at Johannesburg and Kruger for return trips; please ask when booking. Full conditions are in the terms of carriage.</p>'],
+   ['What items can\u2019t I bring?','<p>Dangerous goods and security-restricted items are not allowed in checked bags, hand luggage or on your person. Examples include:</p><ul><li><b>Flammables:</b> lighter or heater fuel, paints, solvents, matches, bleaches and fibreglass repair kits.</li><li><b>Firearms, weapons &amp; explosives:</b> firearms, ammunition, fireworks, flares and smoke canisters.</li><li><b>Infectious &amp; biological substances.</b></li><li><b>Corrosives:</b> mercury, acids, alkalis, wet-cell batteries.</li><li><b>Compressed gases:</b> oxygen, butane and propane canisters, scuba tanks, non-refillable gas cartridges.</li></ul><p>You will be asked to confirm at check-in that you carry none of these. Ask us for the full, current list.</p>'],
+   ['What are the benefits of chartering privately?','<p><b>Time:</b> no long airport queues or parking searches. <b>Lounge:</b> relax before your flight with a view of the airfield. <b>Control:</b> choose your date, time and destination. <b>Space:</b> more leg and window room, and you can sit where you like apart from the cockpit.</p>'],
+   ['Can you work with my security personnel?','<p>Yes. Talk to us before your flight about any special requirements. Trip details are kept confidential as far as possible, and we plan clearance times with your team. If security personnel need to carry firearms, tell us well in advance so it can be arranged in line with the regulations.</p>'],
+   ['Which safari destinations can I fly to?','<p>We can charter to many lodges and gateways, for example Kruger National Park and Skukuza, Hoedspruit, Pafuri, Madikwe, and Marakele and Marataba in the Waterberg. See the <a href="#routes" style="color:var(--gold2);text-decoration:underline">destinations map</a>. Landings depend on airstrip suitability, weather and approvals.</p>'],
+   ['Do you offer international flights?','<p>Yes. Alongside flights within South Africa, including Cape Town, Durban and Limpopo, we cater for international charters. Tell us your itinerary in the enquiry form.</p>'],
+   ['Where do you fly from?','<p>Our flight base is Lanseria International Airport. Our office is in Kempton Park. We can arrange other airports and landing strips to suit your trip.</p>'],
+   ['Do you provide safari guides?','<p>We provide the flight only. If you would like a guided safari, speak to a safari tour operator of your choice.</p>']
+  ];
+  $('#faq-list').innerHTML=Q.map((q,i)=>'<div class="fq'+(i===0?' on':'')+'"><button aria-expanded="'+(i===0)+'">'+q[0]+'<span class="pm"></span></button><div class="ans"><div><div class="ans-in">'+q[1]+'</div></div></div></div>').join('');
+  $('#faq-list').addEventListener('click',e=>{const b=e.target.closest('.fq>button');if(!b)return;const f=b.parentElement,o=!f.classList.contains('on');$$('.fq').forEach(x=>{x.classList.remove('on');x.firstChild.setAttribute('aria-expanded',false)});if(o){f.classList.add('on');b.setAttribute('aria-expanded',true)}});
+})();
+
+/* enquiry form (opens visitor's email app) */
+$('#enq').addEventListener('submit',e=>{
+  e.preventDefault();
+  const v=id=>$('#'+id).value.trim(),msg=$('#fmsg');
+  if(!v('fn')||!v('fs')||!v('fe')||!v('fp')){msg.textContent='Please complete your name, email and phone.';return}
+  if(!/^\S+@\S+\.\S+$/.test(v('fe'))){msg.textContent='Please enter a valid email address.';return}
+  if(!$('#fc').checked){msg.textContent='Please tick the consent box so we can respond.';return}
+  const tt=($('input[name=tt]:checked')||{}).value;
+  const body=['Name: '+v('fn')+' '+v('fs'),'Email: '+v('fe'),'Phone: '+v('fp'),'Trip type: '+tt,'Departure date: '+(v('fd')||'-'),'Return date: '+(v('fr')||'-'),'Passengers: '+(v('fpx')||'-'),'From: '+(v('ff')||'-'),'To: '+(v('fa')||'-'),'','Message:',v('fm')].join('\n');
+  location.href='mailto:'+CLIENT.email+'?subject='+encodeURIComponent('Flight enquiry from '+v('fn')+' '+v('fs'))+'&body='+encodeURIComponent(body);
+  msg.textContent='Your email app should open with the enquiry ready to send. If it does not, please email '+CLIENT.email+' or call +27 (0) 83 292 0978.';
+});
+
+/* modals (templates; legal review required) */
+const MODALS={
+  privacy:'<h3>Privacy Notice</h3><p class="draft">Template text. Titanium Air\u2019s legal adviser should review and finalise this notice before the site goes live.</p><h5>Who we are</h5><p>Titanium Air Pty Ltd, 46 Golden Sun Crescent, Glen Eagle Estate, Glen Erasmia, Kempton Park, 1619. Email: info@titaniumair.co.za.</p><h5>What we collect</h5><p>When you send a flight enquiry we collect the details you provide: your name, email, phone number, trip details and message.</p><h5>Why we use it</h5><p>To respond to your enquiry, arrange and administer your flight, and meet our legal obligations. We do not sell your personal information.</p><h5>Sharing &amp; retention</h5><p>We share information only with service providers and authorities where needed to operate your flight or comply with the law, and keep it only as long as necessary for those purposes.</p><h5>Third-party services</h5><p>This website loads fonts from Google Fonts and an embedded Google map, which may receive your IP address and browser details. Enquiries are sent from your own email app, so your email provider also handles that message.</p><h5>Your rights</h5><p>Under the Protection of Personal Information Act (POPIA) you may request access to, correction or deletion of your personal information, or object to its processing, by emailing us. You may also complain to the Information Regulator.</p>',
+  terms:'<h3>Terms &amp; Disclaimer</h3><p class="draft">Template text. Titanium Air\u2019s legal adviser should review and finalise these terms before the site goes live.</p><h5>General information</h5><p>The content of this website is for general information only and is not an offer or contract. Flights are provided under the terms of carriage and booking conditions supplied when you book.</p><h5>Availability &amp; operations</h5><p>Aircraft types, seat numbers, routes, schedules and landing sites are subject to availability, operational requirements, weather, airstrip suitability and regulatory approval, and may change.</p><h5>Third-party names</h5><p>Aircraft manufacturers, lodges, reserves and other third parties mentioned are named for identification only and are the property of their owners. No affiliation or endorsement is implied.</p><h5>Reviews</h5><p>Guest reviews are quoted from Google and reflect the opinions of the reviewers.</p><h5>Liability</h5><p>To the extent permitted by law, we are not liable for loss arising from the use of this website or from errors or omissions in its content.</p>'
+};
+const modal=$('#modal');
+function openModal(k){$('#mbody').innerHTML='<button class="x" aria-label="Close">&times;</button>'+MODALS[k];modal.classList.add('on');$('.x',modal).focus()}
+document.addEventListener('click',e=>{const m=e.target.closest('[data-modal]');if(m){e.preventDefault();openModal(m.dataset.modal)}if(e.target===modal||e.target.closest('.x'))modal.classList.remove('on')});
+addEventListener('keydown',e=>{if(e.key==='Escape'){modal.classList.remove('on');toggleMenu(false)}});
+</script>
+</body>
+</html>
