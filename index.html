@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Titanium Air | Private Charter Flights, South Africa</title>
 <meta name="description" content="Titanium Air arranges private charter flights across South Africa and beyond: business, leisure, group and safari flights from Lanseria.">
 <meta name="theme-color" content="#07090d">
@@ -35,7 +35,10 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{background:var(--ink);color:var(--text);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{overflow-x:hidden;overflow-x:clip}
+body{background:var(--ink);color:var(--text);font-family:var(--sans);font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip;-webkit-text-size-adjust:100%}
+.skip{position:fixed;left:12px;top:-60px;z-index:600;background:var(--gold);color:#14100a;padding:.8rem 1.2rem;border-radius:10px;font-weight:700;transition:top .3s}
+.skip:focus{top:12px}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 img,svg{display:block;max-width:100%}
@@ -59,7 +62,7 @@ section{position:relative;padding:clamp(5rem,11vw,9rem) 0}
 footer .logo img.lg{height:84px}
 .in-mark img{height:clamp(110px,18vh,160px);width:auto;margin:0 auto 2rem;opacity:0;animation:fadeup 1.2s var(--ease) .15s forwards;filter:drop-shadow(0 10px 40px rgba(159,196,255,.25))}
 /* nav */
-nav{position:fixed;inset:0 0 auto 0;z-index:150;transition:transform .5s var(--ease),background .4s,border-color .4s;border-bottom:1px solid transparent}
+nav{position:fixed;inset:0 0 auto 0;z-index:150;padding-top:env(safe-area-inset-top);transition:transform .5s var(--ease),background .4s,border-color .4s;border-bottom:1px solid transparent}
 nav.solid{background:rgba(6,8,12,.72);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border-color:var(--line)}
 nav.hide{transform:translateY(-100%)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:76px}
@@ -82,9 +85,9 @@ nav.hide{transform:translateY(-100%)}
 .burger i{position:absolute;left:10px;right:10px;height:1.5px;background:var(--text);transition:.4s var(--ease)}
 .burger i:nth-child(1){top:17px}.burger i:nth-child(2){top:26px}
 .burger.on i:nth-child(1){top:21px;transform:rotate(45deg)}.burger.on i:nth-child(2){top:21px;transform:rotate(-45deg)}
-#mnav{position:fixed;inset:0;background:rgba(6,8,12,.97);z-index:140;display:flex;flex-direction:column;justify-content:center;padding:0 8vw;gap:1.1rem;clip-path:circle(0 at calc(100% - 40px) 38px);transition:clip-path .8s var(--ease)}
-#mnav.on{clip-path:circle(150% at calc(100% - 40px) 38px)}
-#mnav a{font-family:var(--serif);font-size:2.6rem}
+#mnav{position:fixed;inset:0;background:rgba(6,8,12,.97);z-index:140;display:flex;flex-direction:column;justify-content:center;padding:90px 8vw 40px;gap:.4rem;overflow-y:auto;clip-path:circle(0 at calc(100% - 40px) 38px);visibility:hidden;transition:clip-path .8s var(--ease),visibility 0s .8s}
+#mnav.on{clip-path:circle(150% at calc(100% - 40px) 38px);visibility:visible;transition:clip-path .8s var(--ease),visibility 0s}
+#mnav a{font-family:var(--serif);font-size:clamp(1.9rem,9vw,2.6rem);line-height:1.2;padding:.55rem 0;min-height:48px;border-bottom:1px solid var(--line)}
 @media(max-width:980px){.links{display:none}.burger{display:block}}
 
 /* hero */
@@ -400,6 +403,83 @@ body:not(.go) .w>span,body:not(.go) .fade{animation-play-state:paused}
 #alt i::after{content:"";position:absolute;left:-3px;bottom:0;width:7px;height:7px;background:var(--gold2);transform:rotate(45deg) translateY(var(--ap,0px))}
 @media(max-width:900px){#alt{display:none}}
 
+/* ===== phone & touch refinements ===== */
+.dots button{position:relative}
+.dots button::after{content:"";position:absolute;inset:-22px -4px}
+.logo img.lg{max-width:62vw;object-fit:contain}
+@media(hover:none){.card:hover,.fc:hover,.dbtn:hover,.btn.gold:hover,.btn.ghost:hover{transform:none}.card:hover::before{opacity:0}}
+@media(max-width:900px){
+  .rv.l,.rv.r{transform:translateY(36px)}
+  .rv.l.in,.rv.r.in{transform:none}
+  .faq-grid>div:first-child{position:static!important}
+  section{padding:clamp(3.8rem,13vw,5.5rem) 0}
+}
+@media(max-width:640px){
+  .wrap{width:min(1240px,90vw)}
+  .nav-in{height:64px}
+  .logo img.lg{height:42px}
+  #hero{align-items:flex-start}
+  .hero-grid{padding:104px 0 150px;gap:2rem}
+  #hero h1{font-size:clamp(2.7rem,12.5vw,3.6rem);margin:1rem 0 1.2rem}
+  .lead{font-size:1rem}
+  .hero-cta{margin-top:1.8rem}
+  .hero-cta .btn{flex:1 1 100%;justify-content:center}
+  .btn{min-height:48px;padding:.95rem 1.4rem}
+  .pass{padding:1.3rem}
+  .route .c{font-size:2.5rem}
+  .scrollcue{bottom:14px}
+  .eyebrow{font-size:.72rem;letter-spacing:.24em}
+  .eyebrow::before{width:22px}
+  h2{font-size:clamp(2rem,9.4vw,2.7rem)}
+  .quote{font-size:1.35rem}
+  .stats{margin-top:2.5rem}
+  .stat{padding:1.4rem .8rem}
+  .stat span{font-size:.72rem;letter-spacing:.14em}
+  .card{padding:1.6rem 1.3rem}
+  .svc{margin-top:3rem}
+  .svc-art{aspect-ratio:4/3}
+  .ticks{margin:1.2rem 0 1.4rem}
+  .fleet-top{align-items:flex-start}
+  .filters button{min-height:44px;padding:.65rem 1rem;font-size:.74rem}
+  .rail{padding-top:2rem;gap:1rem}
+  .fc-art{height:170px}
+  .fc a.enq{min-height:44px;font-size:.78rem}
+  .rail-ctl button{width:48px;height:48px}
+  .mapbox{padding:.4rem;border-radius:18px}
+  .nd text{display:none}
+  .nd.act text{display:block;font-size:26px;font-weight:700}
+  .hub text{font-size:24px}
+  .nd circle.dot{r:11px;stroke-width:3}
+  .dbtn{min-height:54px}
+  .dbtn small{display:none}
+  .tabs{gap:0}
+  .tabs button{flex:1 1 100%;text-align:left;min-height:48px}
+  .rev{min-height:0}
+  .rv-slide p{font-size:1.4rem}
+  .fq>button{font-size:1.25rem;min-height:56px}
+  .cinfo a,.cinfo address{font-size:1.3rem;overflow-wrap:anywhere}
+  .map{height:200px}
+  form{padding:1.3rem;border-radius:20px}
+  .f input,.f textarea,.f select{min-height:48px;font-size:16px}
+  .seg label{min-height:48px;display:grid;place-items:center}
+  .consent{font-size:.88rem}
+  .consent input{width:22px;height:22px;flex:none}
+  .pass small,.fc dt,.tag,.cinfo small,.in-count small,.f label,.lbl,.f-top h4{font-size:.74rem}
+  .in-list li{font-size:.72rem}
+  .legal{font-size:.8rem}
+  footer{padding-bottom:7rem}
+  .f-top{gap:2rem}
+  .f-top a,.f-top button{min-height:44px;display:flex;align-items:center}
+  .mb{padding:1.5rem 1.2rem}
+  #concept{left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));justify-content:space-between;font-size:.66rem;letter-spacing:.08em}
+  #concept button{width:40px;height:40px;flex:none}
+  #inSkip{right:14px;bottom:calc(14px + env(safe-area-inset-bottom));min-height:44px}
+  .in-c{margin-top:-8vh}
+  .in-count{font-size:4.6rem}
+}
+@media(max-width:380px){#hero h1{font-size:2.5rem}.stats{grid-template-columns:1fr 1fr}.route .c{font-size:2.2rem}}
+@media(max-height:520px) and (orientation:landscape){#hero{align-items:flex-start}.hero-grid{padding:90px 0 110px}.in-list{display:none}}
+
 @media(prefers-reduced-motion:reduce){
   #intro,#inRing{display:none!important}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
@@ -408,9 +488,10 @@ body:not(.go) .w>span,body:not(.go) .fade{animation-play-state:paused}
 </style>
 </head>
 <body>
+<a class="skip" href="#about">Skip to content</a>
 <div id="prog"></div>
 <div id="glow"></div>
-<div id="intro" aria-hidden="true">
+<div id="intro" role="status" aria-label="Loading Titanium Air">
   <svg class="rw" id="rw" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMax slice"></svg>
   <div class="in-c" id="inC">
     <div class="in-mark"><img class="lg" src="logo.png" onerror="this.onerror=null;this.src='https://titaniumair.co.za/wp-content/uploads/2021/04/cropped-Titanium-Air-private-charter-flights-lanseria.png'" alt="Titanium Air logo"></div>
@@ -439,17 +520,17 @@ body:not(.go) .w>span,body:not(.go) .fade{animation-play-state:paused}
       <a class="l" href="#faq">FAQ</a>
       <a class="btn gold" href="#contact">Enquire</a>
     </div>
-    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+    <button class="burger" id="burger" aria-label="Menu" aria-controls="mnav" aria-expanded="false"><i></i><i></i></button>
   </div>
 </nav>
-<div id="mnav">
+<div id="mnav" aria-hidden="true">
   <a href="#about">About</a><a href="#services">Services</a><a href="#fleet">Aircraft</a><a href="#routes">Destinations</a><a href="#safety">Safety</a><a href="#faq">FAQ</a><a href="#contact">Enquire</a>
 </div>
 
 <!-- HERO -->
 <header id="hero">
   <div class="hero-photo" data-photo="hero"></div>
-  <canvas id="sky"></canvas>
+  <canvas id="sky" aria-hidden="true"></canvas>
   <div class="sun"></div>
   <div class="ridges" aria-hidden="true">
     <svg viewBox="0 0 1600 400" preserveAspectRatio="none" id="rg1" data-speed=".18"></svg>
@@ -496,6 +577,7 @@ body:not(.go) .w>span,body:not(.go) .fade{animation-play-state:paused}
 
 <div class="marq" aria-hidden="true"><div class="marq-t" id="mq"></div></div>
 
+<main id="main">
 <!-- ABOUT -->
 <section id="about">
   <div class="wrap">
@@ -627,7 +709,7 @@ body:not(.go) .w>span,body:not(.go) .fade{animation-play-state:paused}
   <div class="wrap"><div class="filters rv" id="filters">
     <button class="on" data-f="all">All</button><button data-f="prop">Prop &amp; light aircraft</button><button data-f="jet">Jets</button><button data-f="large">Large cabin</button>
   </div></div>
-  <div class="rail" id="rail"></div>
+  <div class="rail" id="rail" tabindex="0" role="region" aria-label="Aircraft list, scroll sideways"></div>
   <div class="wrap"><p class="fine">Aircraft illustrations are stylised and not to scale. Seat counts are indicative and depend on the configuration of the aircraft assigned to your flight. Range, speed and availability are confirmed when you enquire. Aircraft and manufacturer names are the property of their respective owners.</p></div>
 </section>
 
@@ -758,6 +840,7 @@ body:not(.go) .w>span,body:not(.go) .fade{animation-play-state:paused}
   </div>
 </section>
 
+</main>
 <!-- FOOTER -->
 <footer>
   <div class="wrap">
@@ -888,7 +971,7 @@ function onScroll(){
 }
 addEventListener('scroll',onScroll,{passive:true});onScroll();
 const burger=$('#burger'),mnav=$('#mnav');
-function toggleMenu(f){const on=f===undefined?!mnav.classList.contains('on'):f;mnav.classList.toggle('on',on);burger.classList.toggle('on',on);burger.setAttribute('aria-expanded',on)}
+function toggleMenu(f){const on=f===undefined?!mnav.classList.contains('on'):f;mnav.classList.toggle('on',on);mnav.setAttribute('aria-hidden',!on);document.documentElement.style.overflow=on?'hidden':'';burger.classList.toggle('on',on);burger.setAttribute('aria-expanded',on)}
 burger.onclick=()=>toggleMenu();
 $$('#mnav a').forEach(a=>a.onclick=()=>toggleMenu(false));
 
